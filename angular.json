@@ -100,28 +100,23 @@
         }
       }
     },
-    "ngx-material-you": {
+    "ngx-material-web": {
       "projectType": "library",
-      "schematics": {
-        "@schematics/angular:component": {
-          "style": "scss"
-        }
-      },
-      "root": "projects/ngx-material-you",
-      "sourceRoot": "projects/ngx-material-you/src",
+      "root": "projects/ngx-material-web",
+      "sourceRoot": "projects/ngx-material-web/src",
       "prefix": "ngx-md",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:ng-packagr",
           "options": {
-            "project": "projects/ngx-material-you/ng-package.json"
+            "project": "projects/ngx-material-web/ng-package.json"
           },
           "configurations": {
             "production": {
-              "tsConfig": "projects/ngx-material-you/tsconfig.lib.prod.json"
+              "tsConfig": "projects/ngx-material-web/tsconfig.lib.prod.json"
             },
             "development": {
-              "tsConfig": "projects/ngx-material-you/tsconfig.lib.json"
+              "tsConfig": "projects/ngx-material-web/tsconfig.lib.json"
             }
           },
           "defaultConfiguration": "production"
@@ -129,7 +124,7 @@
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "tsConfig": "projects/ngx-material-you/tsconfig.spec.json",
+            "tsConfig": "projects/ngx-material-web/tsconfig.spec.json",
             "polyfills": [
               "zone.js",
               "zone.js/testing"

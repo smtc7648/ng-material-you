@@ -1,11 +1,10 @@
 /*
- * Public API Surface of ngx-material-you
+ * Public API Surface of ngx-material-web
  */
 
-export * from './lib/ngx-material-you.service';
-export * from './lib/ngx-material-you.component';
-export * from './lib/ngx-material-you.module';
-
+export * from './lib/ngx-material-web.service';
+export * from './lib/ngx-material-web.component';
+export * from './lib/ngx-material-web.module';
 
 
 export * from './lib/core/web-controls/buttons/elevated-button/elevated-button.component';

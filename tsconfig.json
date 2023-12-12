@@ -12,6 +12,9 @@
     "noFallthroughCasesInSwitch": true,
     "sourceMap": true,
     "paths": {
+      "ngx-material-web": [
+        "dist/ngx-material-web"
+      ],
       "ngx-material-you": [
         "dist/ngx-material-you",
         "dist/ngx-material-you"

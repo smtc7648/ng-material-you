@@ -1,15 +1,15 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'lib-ngx-material-you',
+  selector: 'lib-ngx-material-web',
   template: `
     <p>
-      ngx-material-you works!
+      ngx-material-web works!
     </p>
   `,
   styles: [
   ]
 })
-export class NgxMaterialYouComponent {
+export class NgxMaterialWebComponent {
 
 }
