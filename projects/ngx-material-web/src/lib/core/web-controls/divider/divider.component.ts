@@ -9,4 +9,5 @@ export class DividerComponent {
   @Input() inset: boolean | undefined;
   @Input('inset-start') insetStart: boolean | undefined;
   @Input('inset-end') insetEnd: boolean | undefined;
+  @Input() role!: string;
 }
