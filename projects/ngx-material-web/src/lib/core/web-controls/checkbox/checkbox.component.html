@@ -1,0 +1,11 @@
+<label *ngIf="for === ''">
+  <md-checkbox touch-target="wrapper" [checked]="checked" [disabled]="disabled" [indeterminate]="indeterminate"
+    [required]="required" [value]="value"></md-checkbox>
+  {{label}}
+</label>
+
+<ng-container *ngIf="for !== ''" style="display: flex; justify-content: center; align-content: center;">
+  <md-checkbox [id]="for" touch-target="wrapper" [checked]="checked" [disabled]="disabled"
+    [indeterminate]="indeterminate" [required]="required" [value]="value"></md-checkbox>
+  <label [for]="for">{{label}}</label>
+</ng-container>

@@ -1,0 +1,132 @@
+/* You can add global styles to this file, and also import other style files */
+// :root {//THis will be declared at a component level to style it component wise
+//   --md-sys-color-primary: #006A6A;
+//   --md-sys-color-on-primary: #FFFFFF;
+//   --md-sys-color-secondary-container: #CCE8E7;
+//   --md-sys-color-on-secondary-container: #051F1F;
+//   --md-sys-color-outline: #6F7979;
+//   --md-sys-color-surface-container-low: #FAFDFC;
+
+
+//   // --md-elevated-button-container-shape: 0px;
+//   --md-elevated-button-label-text-font: system-ui;
+
+//   // --md-filled-button-container-shape: 0px;
+//   --md-filled-button-label-text-font: system-ui;
+
+//   // --md-filled-tonal-button-container-shape: 0px;
+//   --md-filled-tonal-button-label-text-font: system-ui;
+
+//   // --md-outlined-button-container-shape: 0px;
+//   --md-outlined-button-label-text-font: system-ui;
+
+//   --md-text-button-label-text-font: system-ui;
+// }
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+:root,
+:host {
+  --md-sys-color-background: #f8fbed;
+  --md-sys-color-on-background: #191d15;
+  --md-sys-color-surface: #f8fbed;
+  --md-sys-color-surface-dim: #d8dbce;
+  --md-sys-color-surface-bright: #f8fbed;
+  --md-sys-color-surface-container-lowest: #ffffff;
+  --md-sys-color-surface-container-low: #f2f5e7;
+  --md-sys-color-surface-container: #ecefe2;
+  --md-sys-color-surface-container-high: #e6eadc;
+  --md-sys-color-surface-container-highest: #e1e4d7;
+  --md-sys-color-on-surface: #191d15;
+  --md-sys-color-surface-variant: #dee5d0;
+  --md-sys-color-on-surface-variant: #42493a;
+  --md-sys-color-inverse-surface: #2e3229;
+  --md-sys-color-inverse-on-surface: #eff2e5;
+  --md-sys-color-outline: #727a68;
+  --md-sys-color-outline-variant: #c2c9b5;
+  --md-sys-color-shadow: #000000;
+  --md-sys-color-scrim: #000000;
+  --md-sys-color-surface-tint: #366b00;
+  --md-sys-color-primary: #366b00;
+  --md-sys-color-on-primary: #ffffff;
+  --md-sys-color-primary-container: #b0f279;
+  --md-sys-color-on-primary-container: #275000;
+  --md-sys-color-inverse-primary: #98d863;
+  --md-sys-color-secondary: #4d6538;
+  --md-sys-color-on-secondary: #ffffff;
+  --md-sys-color-secondary-container: #d3f0b6;
+  --md-sys-color-on-secondary-container: #395126;
+  --md-sys-color-tertiary: #006c4a;
+  --md-sys-color-on-tertiary: #ffffff;
+  --md-sys-color-tertiary-container: #5ffaba;
+  --md-sys-color-on-tertiary-container: #005136;
+  --md-sys-color-error: #ba1a1a;
+  --md-sys-color-on-error: #ffffff;
+  --md-sys-color-error-container: #ffdad6;
+  --md-sys-color-on-error-container: #410002;
+
+  background-color: var(--md-sys-color-surface);
+  font-family: 'Google Sans',Roboto,system-ui;
+  color: var(--md-sys-color-primary);
+  --md-ref-typeface-plain: 'Google Sans',Roboto,system-ui;
+}
+// :root,:host{--md-sys-color-background:#fff8f6;--md-sys-color-on-background:#251915;--md-sys-color-surface:#fff8f6;--md-sys-color-surface-dim:#edd5ce;--md-sys-color-surface-bright:#fff8f6;--md-sys-color-surface-container-lowest:#ffffff;--md-sys-color-surface-container-low:#fff1ed;--md-sys-color-surface-container:#ffe9e3;--md-sys-color-surface-container-high:#fce3dc;--md-sys-color-surface-container-highest:#f6ddd6;--md-sys-color-on-surface:#251915;--md-sys-color-surface-variant:#fedbd1;--md-sys-color-on-surface-variant:#59413a;--md-sys-color-inverse-surface:#3c2d29;--md-sys-color-inverse-on-surface:#ffede8;--md-sys-color-outline:#8d7168;--md-sys-color-outline-variant:#e1bfb5;--md-sys-color-shadow:#000000;--md-sys-color-scrim:#000000;--md-sys-color-surface-tint:#ac3503;--md-sys-color-primary:#832500;--md-sys-color-on-primary:#ffffff;--md-sys-color-primary-container:#bc4011;--md-sys-color-on-primary-container:#ffffff;--md-sys-color-inverse-primary:#ffb59d;--md-sys-color-secondary:#904b35;--md-sys-color-on-secondary:#ffffff;--md-sys-color-secondary-container:#ffb198;--md-sys-color-on-secondary-container:#5b230f;--md-sys-color-tertiary:#705d04;--md-sys-color-on-tertiary:#ffffff;--md-sys-color-tertiary-container:#c2aa50;--md-sys-color-on-tertiary-container:#282000;--md-sys-color-error:#ba1a1a;--md-sys-color-on-error:#ffffff;--md-sys-color-error-container:#ffdad6;--md-sys-color-on-error-container:#410002;}
+.m-1 {
+  margin: 1px;
+}
+
+.m-2 {
+  margin: 2px;
+}
+
+.m-3 {
+  margin: 3px;
+}
+
+.m-4 {
+  margin: 4px;
+}
+
+.m-5 {
+  margin: 5px;
+}
+
+.m-6 {
+  margin: 6px;
+}
+
+.m-7 {
+  margin: 7px;
+}
+
+.p-1 {
+  padding: 1px;
+}
+
+.p-2 {
+  padding: 2px;
+}
+
+.p-3 {
+  padding: 3px;
+}
+
+.p-4 {
+  padding: 4px;
+}
+
+.p-5 {
+  padding: 5px;
+}
+
+.p-6 {
+  padding: 6px;
+}
+
+.p-7 {
+  padding: 7px;
+}
+
+.material-symbols-outlined {
+  font-size: var(--_icon-size);
+}

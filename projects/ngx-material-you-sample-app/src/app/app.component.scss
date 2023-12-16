@@ -1,0 +1,48 @@
+.app-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  // flex-direction: column;
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .col {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .row, .col { margin: 5px }
+
+  .buttons-wrapper,
+  .checkboxes-wrapper,
+  .chips-wrapper,
+  .divider-wrapper,
+  .elevation-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+  }
+
+  .ele-l0,
+  .ele-l1,
+  .ele-l2,
+  .ele-l3,
+  .ele-l4,
+  .ele-l5 {
+    position: relative;
+    border-radius: 10px;
+    height: fit-content;
+    width: fit-content;
+    padding: 10px;
+    text-align: center;
+  }
+  .ele-l0 { --md-elevation-level: 0 }
+  .ele-l1 { --md-elevation-level: 1 }
+  .ele-l2 { --md-elevation-level: 2 }
+  .ele-l3 { --md-elevation-level: 3 }
+  .ele-l4 { --md-elevation-level: 4 }
+  .ele-l5 { --md-elevation-level: 5 }
+}
