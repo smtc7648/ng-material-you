@@ -3,7 +3,9 @@
   [disabled]="disabled"
   [href]="href"
   [target]="target"
-  [trailing-icon]="trailingIcon"
-  [has-icon]="hasIcon"
+  [attr.has-icon]="hasIcon"
+  [attr.trailing-icon]="trailingIcon"
   [type]="type"
-  [value]="value">{{label}}</md-text-button>
+  [value]="value">
+  <ng-content></ng-content>
+</md-text-button>

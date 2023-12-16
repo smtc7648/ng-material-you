@@ -3,21 +3,217 @@
 <div class="app-wrapper">
   <div class="buttons-wrapper">
     <h1 class="m-3">Buttons:</h1>
-    <div class="row">
-      <ngx-md-elevated-button class="m-5"></ngx-md-elevated-button>
-      <ngx-md-filled-tonal-button class="m-5"></ngx-md-filled-tonal-button>
-      <ngx-md-filled-button class="m-5"></ngx-md-filled-button>
-      <ngx-md-outlined-button class="m-5"></ngx-md-outlined-button>
-      <ngx-md-text-button class="m-5"></ngx-md-text-button>
-    </div>
+    <ngx-md-elevation elevation-level="5">
+      <div class="row">
+        <ngx-md-elevated-button class="m-5">Elevated Button</ngx-md-elevated-button>
+        <ngx-md-filled-tonal-button class="m-5">Filled Tonal Button</ngx-md-filled-tonal-button>
+        <ngx-md-filled-button class="m-5">Filled Button</ngx-md-filled-button>
+        <ngx-md-outlined-button class="m-5">Outlined Button</ngx-md-outlined-button>
+        <ngx-md-text-button class="m-5">Text Button</ngx-md-text-button>
+      </div>
+
+      <div class="row">
+        <ngx-md-elevated-button class="m-5">
+          Send
+          <svg slot="icon" viewBox="0 0 48 48">
+            <path d="M6 40V8l38 16Zm3-4.65L36.2 24 9 12.5v8.4L21.1 24 9 27Zm0 0V12.5 27Z" />
+          </svg>
+        </ngx-md-elevated-button>
+        <ngx-md-filled-tonal-button class="m-5">
+          Send
+          <svg slot="icon" viewBox="0 0 48 48">
+            <path d="M6 40V8l38 16Zm3-4.65L36.2 24 9 12.5v8.4L21.1 24 9 27Zm0 0V12.5 27Z" />
+          </svg>
+        </ngx-md-filled-tonal-button>
+        <ngx-md-filled-button class="m-5">
+          Send
+          <svg slot="icon" viewBox="0 0 48 48">
+            <path d="M6 40V8l38 16Zm3-4.65L36.2 24 9 12.5v8.4L21.1 24 9 27Zm0 0V12.5 27Z" />
+          </svg>
+        </ngx-md-filled-button>
+        <ngx-md-outlined-button class="m-5">
+          Send
+          <svg slot="icon" viewBox="0 0 48 48">
+            <path d="M6 40V8l38 16Zm3-4.65L36.2 24 9 12.5v8.4L21.1 24 9 27Zm0 0V12.5 27Z" />
+          </svg>
+        </ngx-md-outlined-button>
+        <ngx-md-text-button class="m-5">
+          Send
+          <svg slot="icon" viewBox="0 0 48 48">
+            <path d="M6 40V8l38 16Zm3-4.65L36.2 24 9 12.5v8.4L21.1 24 9 27Zm0 0V12.5 27Z" />
+          </svg>
+        </ngx-md-text-button>
+      </div>
+
+      <div class="row">
+        <ngx-md-elevated-button [trailing-icon]="true" class="m-5">
+          Open
+          <svg slot="icon" viewBox="0 0 48 48">
+            <path
+              d="M9 42q-1.2 0-2.1-.9Q6 40.2 6 39V9q0-1.2.9-2.1Q7.8 6 9 6h13.95v3H9v30h30V25.05h3V39q0 1.2-.9 2.1-.9.9-2.1.9Zm10.1-10.95L17 28.9 36.9 9H25.95V6H42v16.05h-3v-10.9Z" />
+          </svg>
+        </ngx-md-elevated-button>
+        <ngx-md-filled-tonal-button class="m-5" [trailing-icon]="true">
+          Open
+          <svg slot="icon" viewBox="0 0 48 48">
+            <path
+              d="M9 42q-1.2 0-2.1-.9Q6 40.2 6 39V9q0-1.2.9-2.1Q7.8 6 9 6h13.95v3H9v30h30V25.05h3V39q0 1.2-.9 2.1-.9.9-2.1.9Zm10.1-10.95L17 28.9 36.9 9H25.95V6H42v16.05h-3v-10.9Z" />
+          </svg>
+        </ngx-md-filled-tonal-button>
+        <ngx-md-filled-button class="m-5" [trailing-icon]="true">
+          Open
+          <svg slot="icon" viewBox="0 0 48 48">
+            <path
+              d="M9 42q-1.2 0-2.1-.9Q6 40.2 6 39V9q0-1.2.9-2.1Q7.8 6 9 6h13.95v3H9v30h30V25.05h3V39q0 1.2-.9 2.1-.9.9-2.1.9Zm10.1-10.95L17 28.9 36.9 9H25.95V6H42v16.05h-3v-10.9Z" />
+          </svg>
+        </ngx-md-filled-button>
+        <ngx-md-outlined-button class="m-5" [trailing-icon]="true">
+          Open
+          <svg slot="icon" viewBox="0 0 48 48">
+            <path
+              d="M9 42q-1.2 0-2.1-.9Q6 40.2 6 39V9q0-1.2.9-2.1Q7.8 6 9 6h13.95v3H9v30h30V25.05h3V39q0 1.2-.9 2.1-.9.9-2.1.9Zm10.1-10.95L17 28.9 36.9 9H25.95V6H42v16.05h-3v-10.9Z" />
+          </svg>
+        </ngx-md-outlined-button>
+        <ngx-md-text-button class="m-5" [trailing-icon]="true">
+          Open
+          <svg slot="icon" viewBox="0 0 48 48">
+            <path
+              d="M9 42q-1.2 0-2.1-.9Q6 40.2 6 39V9q0-1.2.9-2.1Q7.8 6 9 6h13.95v3H9v30h30V25.05h3V39q0 1.2-.9 2.1-.9.9-2.1.9Zm10.1-10.95L17 28.9 36.9 9H25.95V6H42v16.05h-3v-10.9Z" />
+          </svg>
+        </ngx-md-text-button>
+      </div>
+    </ngx-md-elevation>
   </div>
+
   <div class="checkboxes-wrapper">
     <h1 class="m-3">Checkboxes:</h1>
-    <div class="row">
-      <ngx-md-checkbox label="Checkbox 1" for="Checkbox demo"></ngx-md-checkbox>
-      <ngx-md-checkbox label="Checkbox 2" [indeterminate]="true"></ngx-md-checkbox>
-      <ngx-md-checkbox label="Checkbox 3" [checked]="true"></ngx-md-checkbox>
-      <ngx-md-checkbox label="Checkbox 4" [disabled]="true"></ngx-md-checkbox>
-    </div>
+    <ngx-md-elevation elevation-level="5">
+      <div class="row">
+        <ngx-md-checkbox label="Checkbox 1" for="Checkbox demo"></ngx-md-checkbox>
+        <ngx-md-checkbox label="Checkbox 2" [indeterminate]="true"></ngx-md-checkbox>
+        <ngx-md-checkbox label="Checkbox 3" [checked]="true"></ngx-md-checkbox>
+        <ngx-md-checkbox label="Checkbox 4" [disabled]="true"></ngx-md-checkbox>
+      </div>
+    </ngx-md-elevation>
+  </div>
+
+  <div class="chips-wrapper">
+    <h1 class="m-3">Chips:</h1>
+    <ngx-md-elevation elevation-level="5">
+      <div class="row">
+        <ngx-md-chip-set>
+          <ngx-md-assist-chip label="Assist Chip 1"></ngx-md-assist-chip>
+          <ngx-md-assist-chip label="Assist Chip 2">
+            <svg slot="icon" viewBox="0 0 48 48">
+              <path d="M6 40V8l38 16Zm3-4.65L36.2 24 9 12.5v8.4L21.1 24 9 27Zm0 0V12.5 27Z" />
+            </svg>
+          </ngx-md-assist-chip>
+          <ngx-md-assist-chip label="Assist Chip 3 with Material Icon">
+            <span slot="icon" viewBox="0 0 48 48" class="material-symbols-outlined">
+              filter_list
+            </span>
+          </ngx-md-assist-chip>
+        </ngx-md-chip-set>
+      </div>
+
+      <div class="row">
+        <ngx-md-chip-set>
+          <ngx-md-filter-chip label="Filter Chip 1"></ngx-md-filter-chip>
+          <ngx-md-filter-chip label="Filter Chip 2">
+            <svg slot="icon" viewBox="0 0 48 48">
+              <path d="M6 40V8l38 16Zm3-4.65L36.2 24 9 12.5v8.4L21.1 24 9 27Zm0 0V12.5 27Z" />
+            </svg>
+          </ngx-md-filter-chip>
+          <ngx-md-filter-chip label="Assist Chip 3 with Material Icon">
+            <span slot="icon" viewBox="0 0 48 48" class="material-symbols-outlined">
+              filter_list
+            </span>
+          </ngx-md-filter-chip>
+        </ngx-md-chip-set>
+      </div>
+
+      <div class="row">
+        <ngx-md-chip-set>
+          <ngx-md-input-chip label="Input Chip 1"></ngx-md-input-chip>
+          <ngx-md-input-chip label="Input Chip 2">
+            <svg slot="icon" viewBox="0 0 48 48">
+              <path d="M6 40V8l38 16Zm3-4.65L36.2 24 9 12.5v8.4L21.1 24 9 27Zm0 0V12.5 27Z" />
+            </svg>
+          </ngx-md-input-chip>
+          <ngx-md-input-chip label="Assist Chip 3 with Material Icon">
+            <span slot="icon" viewBox="0 0 48 48" class="material-symbols-outlined">
+              filter_list
+            </span>
+          </ngx-md-input-chip>
+        </ngx-md-chip-set>
+      </div>
+
+      <div class="row">
+        <ngx-md-chip-set>
+          <ngx-md-suggestion-chip label="Suggestion Chip 1"></ngx-md-suggestion-chip>
+          <ngx-md-suggestion-chip label="Suggestion Chip 2">
+            <svg slot="icon" viewBox="0 0 48 48">
+              <path d="M6 40V8l38 16Zm3-4.65L36.2 24 9 12.5v8.4L21.1 24 9 27Zm0 0V12.5 27Z" />
+            </svg>
+          </ngx-md-suggestion-chip>
+          <ngx-md-suggestion-chip label="Assist Chip 3 with Material Icon">
+            <span slot="icon" viewBox="0 0 48 48" class="material-symbols-outlined">
+              filter_list
+            </span>
+          </ngx-md-suggestion-chip>
+        </ngx-md-chip-set>
+      </div>
+    </ngx-md-elevation>
+  </div>
+
+  <div class="divider-wrapper">
+    <h1 class="m-3">Divider:</h1>
+    <ngx-md-elevation elevation-level="5">
+      <div class="row">
+        <section>
+          <p>Lorem ipsum... DEFAULT</p>
+          <ngx-md-divider></ngx-md-divider>
+          <p>Lorem ipsum... DEFAULT</p>
+        </section>
+      </div>
+
+      <div class="row">
+        <section>
+          <p>Lorem ipsum... INSET</p>
+          <ngx-md-divider [inset]="true"></ngx-md-divider>
+          <p>Lorem ipsum... INSET</p>
+        </section>
+      </div>
+
+      <div class="row">
+        <section>
+          <p>Lorem ipsum... INSET START</p>
+          <ngx-md-divider [inset-start]="true"></ngx-md-divider>
+          <p>Lorem ipsum... INSET START</p>
+        </section>
+      </div>
+
+      <div class="row">
+        <section>
+          <p>Lorem ipsum... INSET END</p>
+          <ngx-md-divider [inset-end]="true"></ngx-md-divider>
+          <p>Lorem ipsum... INSET END</p>
+        </section>
+      </div>
+    </ngx-md-elevation>
+  </div>
+
+  <div class="elevation-wrapper">
+    <h1 class="m-3">Elevation:</h1>
+    <ngx-md-elevation elevation-level="5">
+      <div class="row">
+        <ngx-md-elevation elevation-level="0" class="m-3"><span>Elevation Level 0</span></ngx-md-elevation>
+        <ngx-md-elevation elevation-level="1" class="m-3"><span>Elevation Level 1</span></ngx-md-elevation>
+        <ngx-md-elevation elevation-level="2" class="m-3"><span>Elevation Level 2</span></ngx-md-elevation>
+        <ngx-md-elevation elevation-level="3" class="m-3"><span>Elevation Level 3</span></ngx-md-elevation>
+        <ngx-md-elevation elevation-level="4" class="m-3"><span>Elevation Level 4</span></ngx-md-elevation>
+        <ngx-md-elevation elevation-level="5" class="m-3"><span>Elevation Level 5</span></ngx-md-elevation>
+      </div>
+    </ngx-md-elevation>
   </div>
 </div>

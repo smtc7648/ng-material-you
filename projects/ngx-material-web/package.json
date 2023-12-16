@@ -1,9 +1,10 @@
 {
   "name": "ngx-material-web",
-  "version": "0.0.1",
+  "version": "0.0.4",
   "peerDependencies": {
     "@angular/common": "^16.2.0",
-    "@angular/core": "^16.2.0"
+    "@angular/core": "^16.2.0",
+    "@material/web": "^1.1.1"
   },
   "dependencies": {
     "tslib": "^2.3.0"

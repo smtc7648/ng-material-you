@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, OnInit, booleanAttribute } from '@angular/core';
 
 @Component({
   selector: 'ngx-md-elevated-button',
@@ -10,11 +10,10 @@ export class ElevatedButtonComponent {
   @Input() disabled: boolean = false;
   @Input() href: string = '';
   @Input() target: string = '';
-  @Input('trailing-icon') trailingIcon: boolean = false;
-  @Input('has-icon') hasIcon: boolean = false;
+  @Input('trailing-icon') trailingIcon!: boolean;
+  @Input('has-icon') hasIcon!: boolean;
   @Input() type: string = 'submit';
   @Input() value: string = '';
-  @Input() label: string = 'Elevated Button';
 
   // name?: string = undefined;
   // form?: HTMLFormElement = undefined;

@@ -1,9 +1,10 @@
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { WebControlsModule } from 'ngx-material-web';
+// import { WebControlsModule } from 'ngx-material-web';//use for build change
+import { WebControlsModule } from './../../../ngx-material-web/src/public-api'; //use for immediate change
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { WebControlsModule } from 'ngx-material-web';
     WebControlsModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class AppModule { }

@@ -102,6 +102,11 @@
     },
     "ngx-material-web": {
       "projectType": "library",
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss"
+        }
+      },
       "root": "projects/ngx-material-web",
       "sourceRoot": "projects/ngx-material-web/src",
       "prefix": "ngx-md",
