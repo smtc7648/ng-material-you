@@ -1,3 +1,12 @@
-<md-input-chip [attr.label]="label">
+<md-input-chip
+  [attr.label]="label"
+  [attr.aria-label]="ariaLabel"
+  [attr.avatar]="avatar"
+  [attr.href]="href"
+  [attr.target]="target"
+  [attr.remove-only]="removeOnly"
+  [attr.selected]="selected"
+  [attr.disabled]="disabled"
+  [attr.always-focusable]="alwaysFocusable">
   <ng-content></ng-content>
 </md-input-chip>

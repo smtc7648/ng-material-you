@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, booleanAttribute } from '@angular/core';
 
 @Component({
   selector: 'ngx-md-suggestion-chip',
@@ -7,4 +7,10 @@ import { Component, Input } from '@angular/core';
 })
 export class SuggestionChipComponent {
   @Input({ required: true }) label!: string;
+  @Input('aria-label') ariaLabel!: string;
+  @Input({ transform: booleanAttribute }) elevated!: boolean;
+  @Input() href!: string;
+  @Input() target!: string;
+  @Input({ transform: booleanAttribute }) disabled!: boolean;
+  @Input({ transform: booleanAttribute, alias: 'always-focusable' }) alwaysFocusable!: boolean;
 }

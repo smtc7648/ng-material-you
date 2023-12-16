@@ -1,3 +1,10 @@
-<md-assist-chip [attr.label]="label">
+<md-assist-chip
+  [attr.label]="label"
+  [attr.aria-label]="ariaLabel"
+  [attr.href]="href"
+  [attr.target]="target"
+  [attr.elevated]="elevated"
+  [attr.disabled]="disabled"
+  [attr.always-focusable]="alwaysFocusable">
   <ng-content></ng-content>
 </md-assist-chip>

@@ -46,35 +46,35 @@
       </div>
 
       <div class="row">
-        <ngx-md-elevated-button [trailing-icon]="true" class="m-5">
+        <ngx-md-elevated-button trailing-icon class="m-5">
           Open
           <svg slot="icon" viewBox="0 0 48 48">
             <path
               d="M9 42q-1.2 0-2.1-.9Q6 40.2 6 39V9q0-1.2.9-2.1Q7.8 6 9 6h13.95v3H9v30h30V25.05h3V39q0 1.2-.9 2.1-.9.9-2.1.9Zm10.1-10.95L17 28.9 36.9 9H25.95V6H42v16.05h-3v-10.9Z" />
           </svg>
         </ngx-md-elevated-button>
-        <ngx-md-filled-tonal-button class="m-5" [trailing-icon]="true">
+        <ngx-md-filled-tonal-button class="m-5" trailing-icon>
           Open
           <svg slot="icon" viewBox="0 0 48 48">
             <path
               d="M9 42q-1.2 0-2.1-.9Q6 40.2 6 39V9q0-1.2.9-2.1Q7.8 6 9 6h13.95v3H9v30h30V25.05h3V39q0 1.2-.9 2.1-.9.9-2.1.9Zm10.1-10.95L17 28.9 36.9 9H25.95V6H42v16.05h-3v-10.9Z" />
           </svg>
         </ngx-md-filled-tonal-button>
-        <ngx-md-filled-button class="m-5" [trailing-icon]="true">
+        <ngx-md-filled-button class="m-5" trailing-icon>
           Open
           <svg slot="icon" viewBox="0 0 48 48">
             <path
               d="M9 42q-1.2 0-2.1-.9Q6 40.2 6 39V9q0-1.2.9-2.1Q7.8 6 9 6h13.95v3H9v30h30V25.05h3V39q0 1.2-.9 2.1-.9.9-2.1.9Zm10.1-10.95L17 28.9 36.9 9H25.95V6H42v16.05h-3v-10.9Z" />
           </svg>
         </ngx-md-filled-button>
-        <ngx-md-outlined-button class="m-5" [trailing-icon]="true">
+        <ngx-md-outlined-button class="m-5" trailing-icon>
           Open
           <svg slot="icon" viewBox="0 0 48 48">
             <path
               d="M9 42q-1.2 0-2.1-.9Q6 40.2 6 39V9q0-1.2.9-2.1Q7.8 6 9 6h13.95v3H9v30h30V25.05h3V39q0 1.2-.9 2.1-.9.9-2.1.9Zm10.1-10.95L17 28.9 36.9 9H25.95V6H42v16.05h-3v-10.9Z" />
           </svg>
         </ngx-md-outlined-button>
-        <ngx-md-text-button class="m-5" [trailing-icon]="true">
+        <ngx-md-text-button class="m-5" trailing-icon>
           Open
           <svg slot="icon" viewBox="0 0 48 48">
             <path
@@ -89,10 +89,10 @@
     <h1 class="m-3">Checkboxes:</h1>
     <ngx-md-elevation elevation-level="5">
       <div class="row">
-        <ngx-md-checkbox label="Checkbox 1" for="Checkbox demo"></ngx-md-checkbox>
-        <ngx-md-checkbox label="Checkbox 2" [indeterminate]="true"></ngx-md-checkbox>
-        <ngx-md-checkbox label="Checkbox 3" [checked]="true"></ngx-md-checkbox>
-        <ngx-md-checkbox label="Checkbox 4" [disabled]="true"></ngx-md-checkbox>
+        <ngx-md-checkbox label="Checkbox 1" aria-label="Checkbox 1" for="Checkbox demo"></ngx-md-checkbox>
+        <ngx-md-checkbox label="Checkbox 2" aria-label="Checkbox 2" [indeterminate]="true"></ngx-md-checkbox>
+        <ngx-md-checkbox label="Checkbox 3" aria-label="Checkbox 3" [checked]="true"></ngx-md-checkbox>
+        <ngx-md-checkbox label="Checkbox 4" aria-label="Checkbox 4" [disabled]="true"></ngx-md-checkbox>
       </div>
     </ngx-md-elevation>
   </div>
@@ -101,8 +101,9 @@
     <h1 class="m-3">Chips:</h1>
     <ngx-md-elevation elevation-level="5">
       <div class="row">
-        <ngx-md-chip-set>
-          <ngx-md-assist-chip label="Assist Chip 1"></ngx-md-assist-chip>
+        <ngx-md-chip-set aria-labelledby="chip set label" aria-label="chip set aria label">
+          <ngx-md-assist-chip label="Assist Chip 0" aria-label="Assist Chip 0 Aria Label."></ngx-md-assist-chip>
+          <ngx-md-assist-chip label="Assist Chip 1" disabled></ngx-md-assist-chip>
           <ngx-md-assist-chip label="Assist Chip 2">
             <svg slot="icon" viewBox="0 0 48 48">
               <path d="M6 40V8l38 16Zm3-4.65L36.2 24 9 12.5v8.4L21.1 24 9 27Zm0 0V12.5 27Z" />
@@ -117,7 +118,8 @@
       </div>
 
       <div class="row">
-        <ngx-md-chip-set>
+        <ngx-md-chip-set aria-label="filter chip set label">
+          <ngx-md-filter-chip label="Filter Chip 0" selected removable elevated></ngx-md-filter-chip>
           <ngx-md-filter-chip label="Filter Chip 1"></ngx-md-filter-chip>
           <ngx-md-filter-chip label="Filter Chip 2">
             <svg slot="icon" viewBox="0 0 48 48">
@@ -134,6 +136,7 @@
 
       <div class="row">
         <ngx-md-chip-set>
+          <ngx-md-input-chip label="Input Chip 0" remove-only avatar disabled always-focusable></ngx-md-input-chip>
           <ngx-md-input-chip label="Input Chip 1"></ngx-md-input-chip>
           <ngx-md-input-chip label="Input Chip 2">
             <svg slot="icon" viewBox="0 0 48 48">
@@ -150,6 +153,7 @@
 
       <div class="row">
         <ngx-md-chip-set>
+          <ngx-md-suggestion-chip label="Suggestion Chip 0" elevated></ngx-md-suggestion-chip>
           <ngx-md-suggestion-chip label="Suggestion Chip 1"></ngx-md-suggestion-chip>
           <ngx-md-suggestion-chip label="Suggestion Chip 2">
             <svg slot="icon" viewBox="0 0 48 48">

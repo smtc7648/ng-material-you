@@ -1,4 +1,4 @@
-import { Component, INJECTOR, Input } from '@angular/core';
+import { Component, INJECTOR, Input, booleanAttribute } from '@angular/core';
 
 @Component({
   selector: 'ngx-md-checkbox',
@@ -6,10 +6,11 @@ import { Component, INJECTOR, Input } from '@angular/core';
   styleUrls: ['./checkbox.component.scss']
 })
 export class CheckboxComponent {
-  @Input() checked: boolean = false;
-  @Input() disabled: boolean = false;
-  @Input() indeterminate: boolean = false;
-  @Input() required: boolean = false;
+  @Input({ alias: 'aria-label' }) ariaLabel!: string;
+  @Input() checked!: boolean;
+  @Input() disabled!: boolean;
+  @Input() indeterminate!: boolean;
+  @Input() required!: boolean;
   @Input() value: string = 'on';
   @Input() label: string = '';
   @Input() for: string = '';

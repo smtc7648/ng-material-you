@@ -1,11 +1,27 @@
 <label *ngIf="for === ''">
-  <md-checkbox touch-target="wrapper" [checked]="checked" [disabled]="disabled" [indeterminate]="indeterminate"
-    [required]="required" [value]="value"></md-checkbox>
-  {{label}}
-</label>
+  <md-checkbox
+    touch-target="wrapper"
+    [attr.aria-label]="ariaLabel"
+    [attr.checked]="checked"
+    [attr.disabled]="disabled"
+    [attr.indeterminate]="indeterminate"
+    [attr.required]="required"
+    [attr.value]="value"></md-checkbox>
+    {{label}}
+  </label>
 
-<ng-container *ngIf="for !== ''" style="display: flex; justify-content: center; align-content: center;">
-  <md-checkbox [id]="for" touch-target="wrapper" [checked]="checked" [disabled]="disabled"
-    [indeterminate]="indeterminate" [required]="required" [value]="value"></md-checkbox>
-  <label [for]="for">{{label}}</label>
-</ng-container>
+<span class="ngx-md-checkbox-wrapper" *ngIf="for !== ''">
+  <md-checkbox
+    [attr.aria-label]="ariaLabel"
+    touch-target="wrapper"
+    [attr.id]="for"
+    [attr.checked]="checked"
+    [attr.disabled]="disabled"
+    [attr.indeterminate]="indeterminate"
+    [attr.required]="required"
+    [attr.value]="value">
+  </md-checkbox>
+  <label [attr.for]="for">
+    {{label}}
+  </label>
+</span>
