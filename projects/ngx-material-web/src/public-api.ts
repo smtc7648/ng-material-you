@@ -18,7 +18,7 @@ export * from './lib/core/web-controls/chips/assist-chip/assist-chip.component';
 export * from './lib/core/web-controls/chips/filter-chip/filter-chip.component';
 export * from './lib/core/web-controls/chips/input-chip/input-chip.component';
 export * from './lib/core/web-controls/chips/suggestion-chip/suggestion-chip.component';
-// export * from './lib/core/web-controls/dialog/dialog.component';
+export * from './lib/core/web-controls/dialog/dialog.component';
 export * from './lib/core/web-controls/divider/divider.component';
 export * from './lib/core/web-controls/elevation/elevation.component';
 

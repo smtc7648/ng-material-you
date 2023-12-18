@@ -229,4 +229,29 @@
       </div>
     </ngx-md-elevation>
   </div>
+
+  <div class="dialog-wrapper">
+    <h1 class="m-3">Dialogs:</h1>
+    <ngx-md-elevation elevation-level="5">
+      <ngx-md-elevated-button (click)="onClickOpenDialog()">Open Dialog</ngx-md-elevated-button>
+    </ngx-md-elevation>
+  </div>
 </div>
+
+<!-- Dialogs -->
+<ngx-md-dialog
+  #sampleDialog
+  [open]="isDialogOpened"
+  type="alert"
+  (open)="onOpen()"
+  (opened)="onOpend()"
+  (close)="onClose()"
+  (closed)="onClosed()"
+  (cancel)="onCancel()">
+  <div headline>This is sample Headline for alert.</div>
+  <div content>This is sample Content for alert.</div>
+  <div actions>
+    <md-text-button (click)="onClickDialogAction('Close')">Close</md-text-button>
+    <md-text-button (click)="onClickDialogAction('Ok')">Ok</md-text-button>
+  </div>
+</ngx-md-dialog>

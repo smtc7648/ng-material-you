@@ -1,1 +1,20 @@
-<p>dialog works!</p>
+<md-dialog
+  #ngxMdDialog
+  [attr.aria-label]="ariaLabel"
+  [attr.type]="type"
+  [open]="isOpen"
+  (open)="triggerOpen()"
+  (opened)="triggerOpened()"
+  (close)="triggerClose()"
+  (closed)="triggerClosed()"
+  (cancel)="triggerCancel()">
+  <div slot="headline">
+    <ng-content select="[headline]"></ng-content>
+  </div>
+  <div slot="content">
+    <ng-content select="[content]"></ng-content>
+  </div>
+  <div slot="actions">
+    <ng-content select="[actions]"></ng-content>
+  </div>
+</md-dialog>

@@ -69,7 +69,7 @@ import { ChipSetComponent } from './chips/chip-set/chip-set.component';
     FilterChipComponent,
     InputChipComponent,
     SuggestionChipComponent,
-    // DialogComponent,
+    DialogComponent,
     DividerComponent,
     ElevationComponent
   ],
