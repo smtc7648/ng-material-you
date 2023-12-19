@@ -10,7 +10,7 @@ import { NgxMaterialWebComponent } from './ngx-material-web.component';
   imports: [
   ],
   exports: [
-    NgxMaterialWebComponent
+    // NgxMaterialWebComponent
   ]
 })
 export class NgxMaterialWebModule { }

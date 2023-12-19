@@ -236,13 +236,139 @@
       <ngx-md-elevated-button (click)="onClickOpenDialog()">Open Dialog</ngx-md-elevated-button>
     </ngx-md-elevation>
   </div>
+
+  <div class="fab-wrapper">
+    <h1 class="m-3">Floating Action Button (FAB):</h1>
+    <div class="row m-5">
+      <ngx-md-elevation elevation-level="5">
+        <div class="row">
+          <ngx-md-fab variant="primary" class="m-3">
+            <ngx-md-icon slot="icon">edit</ngx-md-icon>
+          </ngx-md-fab>
+          <ngx-md-fab variant="secondary" class="m-3">
+            <ngx-md-icon slot="icon">edit</ngx-md-icon>
+          </ngx-md-fab>
+          <ngx-md-fab variant="tertiary" class="m-3">
+            <ngx-md-icon slot="icon">edit</ngx-md-icon>
+          </ngx-md-fab>
+        </div>
+        <div class="row">
+          <ngx-md-fab class="m-3" label="Edit" variant="primary">
+            <ngx-md-icon slot="icon">edit</ngx-md-icon>
+          </ngx-md-fab>
+          <ngx-md-fab class="m-3" label="Edit" variant="secondary">
+            <ngx-md-icon slot="icon">edit</ngx-md-icon>
+          </ngx-md-fab>
+          <ngx-md-fab class="m-3" label="Edit" variant="tertiary">
+            <ngx-md-icon slot="icon">edit</ngx-md-icon>
+          </ngx-md-fab>
+          <ngx-md-fab class="m-3" label="Edit">
+            <ngx-md-icon slot="icon">edit</ngx-md-icon>
+          </ngx-md-fab>
+        </div>
+        <div class="row">
+          <ngx-md-fab class="m-3" label="Edit" variant="primary"></ngx-md-fab>
+          <ngx-md-fab class="m-3" label="Edit" variant="secondary"></ngx-md-fab>
+          <ngx-md-fab class="m-3" label="Edit" variant="tertiary"></ngx-md-fab>
+          <ngx-md-fab class="m-3" label="Edit"></ngx-md-fab>
+        </div>
+        <div class="row">
+          <ngx-md-fab class="m-3" lowered label="Lowered Edit" variant="primary"></ngx-md-fab>
+          <ngx-md-fab class="m-3" lowered label="Lowered Edit" variant="secondary"></ngx-md-fab>
+          <ngx-md-fab class="m-3" lowered label="Lowered Edit" variant="tertiary"></ngx-md-fab>
+          <ngx-md-fab class="m-3" lowered label="Lowered Edit"></ngx-md-fab>
+        </div>
+        <div class="row">
+          <ngx-md-fab class="m-3" size="small">
+            <ngx-md-icon slot="icon">edit</ngx-md-icon>
+          </ngx-md-fab>
+          <ngx-md-fab class="m-3" size="small" touch-target="none">
+            <ngx-md-icon slot="icon">edit</ngx-md-icon>
+          </ngx-md-fab>
+          <ngx-md-fab class="m-3" size="medium">
+            <ngx-md-icon slot="icon">edit</ngx-md-icon>
+          </ngx-md-fab>
+          <ngx-md-fab class="m-3">
+            <ngx-md-icon slot="icon">edit</ngx-md-icon>
+          </ngx-md-fab>
+          <ngx-md-fab class="m-3" size="large">
+            <ngx-md-icon slot="icon">edit</ngx-md-icon>
+          </ngx-md-fab>
+        </div>
+      </ngx-md-elevation>
+    </div>
+    <h1 class="m-3">Branded FAB:</h1>
+    <div class="row m-5">
+      <ngx-md-elevation elevation-level="5">
+        <div class="row">
+          <ngx-md-branded-fab class="m-3" size="small" aria-label="Add">
+            <svg slot="icon" viewBox="0 0 36 36">
+              <path fill="#34A853" d="M16 16v14h4V20z"></path>
+              <path fill="#4285F4" d="M30 16H20l-4 4h14z"></path>
+              <path fill="#FBBC05" d="M6 16v4h10l4-4z"></path>
+              <path fill="#EA4335" d="M20 16V6h-4v14z"></path>
+              <path fill="none" d="M0 0h36v36H0z"></path>
+            </svg>
+          </ngx-md-branded-fab>
+
+          <ngx-md-branded-fab class="m-3" label="Add">
+            <svg slot="icon" viewBox="0 0 36 36">
+              <path fill="#34A853" d="M16 16v14h4V20z"></path>
+              <path fill="#4285F4" d="M30 16H20l-4 4h14z"></path>
+              <path fill="#FBBC05" d="M6 16v4h10l4-4z"></path>
+              <path fill="#EA4335" d="M20 16V6h-4v14z"></path>
+              <path fill="none" d="M0 0h36v36H0z"></path>
+            </svg>
+          </ngx-md-branded-fab>
+
+          <ngx-md-branded-fab class="m-3" aria-label="Add">
+            <svg slot="icon" viewBox="0 0 36 36">
+              <path fill="#34A853" d="M16 16v14h4V20z"></path>
+              <path fill="#4285F4" d="M30 16H20l-4 4h14z"></path>
+              <path fill="#FBBC05" d="M6 16v4h10l4-4z"></path>
+              <path fill="#EA4335" d="M20 16V6h-4v14z"></path>
+              <path fill="none" d="M0 0h36v36H0z"></path>
+            </svg>
+          </ngx-md-branded-fab>
+          <ngx-md-branded-fab class="m-3" size="large" aria-label="Add">
+            <svg slot="icon" viewBox="0 0 36 36">
+              <path fill="#34A853" d="M16 16v14h4V20z"></path>
+              <path fill="#4285F4" d="M30 16H20l-4 4h14z"></path>
+              <path fill="#FBBC05" d="M6 16v4h10l4-4z"></path>
+              <path fill="#EA4335" d="M20 16V6h-4v14z"></path>
+              <path fill="none" d="M0 0h36v36H0z"></path>
+            </svg>
+          </ngx-md-branded-fab>
+
+          <ngx-md-branded-fab class="m-3" aria-label="Add" lowered>
+            <svg slot="icon" viewBox="0 0 36 36">
+              <path fill="#34A853" d="M16 16v14h4V20z"></path>
+              <path fill="#4285F4" d="M30 16H20l-4 4h14z"></path>
+              <path fill="#FBBC05" d="M6 16v4h10l4-4z"></path>
+              <path fill="#EA4335" d="M20 16V6h-4v14z"></path>
+              <path fill="none" d="M0 0h36v36H0z"></path>
+            </svg>
+          </ngx-md-branded-fab>
+          <ngx-md-branded-fab class="m-3" size="large" aria-label="Add" lowered>
+            <svg slot="icon" viewBox="0 0 36 36">
+              <path fill="#34A853" d="M16 16v14h4V20z"></path>
+              <path fill="#4285F4" d="M30 16H20l-4 4h14z"></path>
+              <path fill="#FBBC05" d="M6 16v4h10l4-4z"></path>
+              <path fill="#EA4335" d="M20 16V6h-4v14z"></path>
+              <path fill="none" d="M0 0h36v36H0z"></path>
+            </svg>
+          </ngx-md-branded-fab>
+        </div>
+      </ngx-md-elevation>
+    </div>
+  </div>
 </div>
 
 <!-- Dialogs -->
 <ngx-md-dialog
-  #sampleDialog
-  [open]="isDialogOpened"
-  type="alert"
+#sampleDialog
+[open]="isDialogOpened"
+type="alert"
   (open)="onOpen()"
   (opened)="onOpend()"
   (close)="onClose()"
@@ -251,7 +377,7 @@
   <div headline>This is sample Headline for alert.</div>
   <div content>This is sample Content for alert.</div>
   <div actions>
-    <md-text-button (click)="onClickDialogAction('Close')">Close</md-text-button>
-    <md-text-button (click)="onClickDialogAction('Ok')">Ok</md-text-button>
+    <ngx-md-text-button (click)="onClickDialogAction('Close')">Close</ngx-md-text-button>
+    <ngx-md-text-button (click)="onClickDialogAction('Ok')">Ok</ngx-md-text-button>
   </div>
 </ngx-md-dialog>
