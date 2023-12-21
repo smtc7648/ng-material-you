@@ -1,24 +1,40 @@
 # NgxMaterialWeb
+This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.0. This library is the angular implementation of the Google's Latest Material Design, [Material 3](https://m3.material.io/) for web [Material Web](https://m3.material.io/develop/web). Material Web is Google’s component library for building applications that work in any web framework.  
+We have used Material Web 1.0 to create the inital angular wrappers for the Matrial Web Components. Currently, NgxMaterialWeb includes the implemenation of below given components.
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.0.
-
-## Code scaffolding
-
-Run `ng generate component component-name --project ngx-material-web` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project ngx-material-web`.
-> Note: Don't forget to add `--project ngx-material-web` or else it will be added to the default project in your `angular.json` file. 
-
-## Build
-
-Run `ng build ngx-material-web` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Publishing
-
-After building your library with `ng build ngx-material-web`, go to the dist folder `cd dist/ngx-material-web` and run `npm publish`.
-
-## Running unit tests
-
-Run `ng test ngx-material-web` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+<!-- ## About
+### Introduction
+### Quick Start
+## Theming
+### Material Theming
+### Color
+### Typography -->
+## Components
+1. Buttons
+> * Elevated Button
+> * Filled Button
+> * Filled Tonal Button
+> * Outline Button
+> * Text Button
+2. Checkbox
+3. Chips
+> * Chip Set
+>   * Assist Chip
+>   * Filter Chip
+>   * Input Chip
+>   * Suggestion Chip
+4. Dialog
+5. Divider
+6. Elevation
+7. Fab
+> * Extended Fab with Icon
+> * Extended Fab without Icon
+8. Branded Fab
+> * Branded Extended Fab with Icon
+> * Branded Extended Fab without Icon
+9. Icon
+<!-- 10. Icon Buttons
+> * Icon Button
+> * Filled Icon Button
+> * Filled Tonal Icon Button
+> * Outlined Icon Button -->

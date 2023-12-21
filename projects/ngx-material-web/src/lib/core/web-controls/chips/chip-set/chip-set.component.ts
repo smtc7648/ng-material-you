@@ -1,5 +1,4 @@
-import { Component } from '@angular/core';
-import { Chip } from '@material/web/chips/internal/chip';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'ngx-md-chip-set',
@@ -7,4 +6,6 @@ import { Chip } from '@material/web/chips/internal/chip';
   styleUrls: ['./chip-set.component.scss']
 })
 export class ChipSetComponent {
+  @Input('aria-labelledby') ariaLabelledBy!: string;
+  @Input('aria-label') ariaLabel!: string;
 }

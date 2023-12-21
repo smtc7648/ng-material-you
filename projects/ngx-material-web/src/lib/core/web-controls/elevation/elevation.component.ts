@@ -1,4 +1,4 @@
-import { Component, Input, OnInit, numberAttribute } from '@angular/core';
+import { Component, Input, OnInit, booleanAttribute, numberAttribute } from '@angular/core';
 
 @Component({
   selector: 'ngx-md-elevation',
@@ -7,6 +7,7 @@ import { Component, Input, OnInit, numberAttribute } from '@angular/core';
 })
 export class ElevationComponent implements OnInit {
   @Input({ alias: 'elevation-level', required: true, transform: numberAttribute }) elevationLevel!: number;
+  @Input({ transform: booleanAttribute }) animated!: boolean;
 
   ngOnInit(): void {
     if (this.elevationLevel > 5)

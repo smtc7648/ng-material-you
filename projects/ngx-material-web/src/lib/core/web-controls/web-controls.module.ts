@@ -15,6 +15,7 @@ import "@material/web/button/text-button";
 import { CheckboxComponent } from './checkbox/checkbox.component';
 import '@material/web/checkbox/checkbox';
 
+import { ChipSetComponent } from './chips/chip-set/chip-set.component';
 import { AssistChipComponent } from './chips/assist-chip/assist-chip.component'
 import { FilterChipComponent } from './chips/filter-chip/filter-chip.component';
 import { InputChipComponent } from './chips/input-chip/input-chip.component';
@@ -33,8 +34,22 @@ import '@material/web/divider/divider';
 
 import { ElevationComponent } from './elevation/elevation.component';
 import '@material/web/elevation/elevation';
-import { ChipSetComponent } from './chips/chip-set/chip-set.component';
 
+import { FabComponent } from './fab/fab/fab.component';
+import { BrandedFabComponent } from './fab/branded-fab/branded-fab.component';
+import '@material/web/fab/fab';
+import '@material/web/fab/branded-fab';
+
+import { IconComponent } from './icon/icon/icon.component';
+import { IconButtonComponent } from './icon/icon-button/icon-button.component';
+import { FilledIconButtonComponent } from './icon/filled-icon-button/filled-icon-button.component';
+import { FilledTonalIconButtonComponent } from './icon/filled-tonal-icon-button/filled-tonal-icon-button.component';
+import { OutlinedIconButtonComponent } from './icon/outlined-icon-button/outlined-icon-button.component';
+import '@material/web/icon/icon';
+import '@material/web/iconbutton/icon-button';
+import '@material/web/iconbutton/filled-icon-button';
+import '@material/web/iconbutton/filled-tonal-icon-button';
+import '@material/web/iconbutton/outlined-icon-button';
 
 
 @NgModule({
@@ -52,7 +67,14 @@ import { ChipSetComponent } from './chips/chip-set/chip-set.component';
     SuggestionChipComponent,
     DialogComponent,
     DividerComponent,
-    ElevationComponent
+    ElevationComponent,
+    FabComponent,
+    BrandedFabComponent,
+    IconComponent,
+    IconButtonComponent,
+    FilledIconButtonComponent,
+    FilledTonalIconButtonComponent,
+    OutlinedIconButtonComponent
   ],
   imports: [
     CommonModule
@@ -69,9 +91,16 @@ import { ChipSetComponent } from './chips/chip-set/chip-set.component';
     FilterChipComponent,
     InputChipComponent,
     SuggestionChipComponent,
-    // DialogComponent,
+    DialogComponent,
     DividerComponent,
-    ElevationComponent
+    ElevationComponent,
+    FabComponent,
+    BrandedFabComponent,
+    IconComponent,
+    // IconButtonComponent,
+    // FilledIconButtonComponent,
+    // FilledTonalIconButtonComponent,
+    // OutlinedIconButtonComponent
   ],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA

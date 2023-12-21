@@ -1,4 +1,4 @@
-<div [attr.class]="'ele-l' + elevationLevel">
+<div [attr.class]="'ele-l' + elevationLevel" [ngClass]="{'animated-surface': animated == true}">
   <md-elevation></md-elevation>
   <ng-content></ng-content>
 </div>

@@ -17,3 +17,16 @@
 .ele-l3 { --md-elevation-level: 3 }
 .ele-l4 { --md-elevation-level: 4 }
 .ele-l5 { --md-elevation-level: 5 }
+
+.animated-surface {
+  transition-duration: 250ms;
+  transition-timing-function: ease-in-out;
+}
+
+.animated-surface:active {
+  --md-elevation-level: 0 !important;
+}
+
+// .animated-surface:hover {
+//   --md-elevation-level: 0 !important;
+// }
