@@ -51,6 +51,15 @@ import '@material/web/iconbutton/filled-icon-button';
 import '@material/web/iconbutton/filled-tonal-icon-button';
 import '@material/web/iconbutton/outlined-icon-button';
 
+import { ListComponent } from './list/list/list.component';
+import { ListItemComponent } from './list/list-item/list-item.component';
+import { MenuItemComponent } from './menu/menu-item/menu-item.component';
+import { MenuComponent } from './menu/menu/menu.component';
+import { SubMenuComponent } from './menu/sub-menu/sub-menu.component';
+import { LinearProgressComponent } from './progress-indicators/linear-progress/linear-progress.component';
+import { CircularProgressComponent } from './progress-indicators/circular-progress/circular-progress.component';
+import { RadioComponent } from './radio/radio.component';
+
 
 @NgModule({
   declarations: [
@@ -74,7 +83,15 @@ import '@material/web/iconbutton/outlined-icon-button';
     IconButtonComponent,
     FilledIconButtonComponent,
     FilledTonalIconButtonComponent,
-    OutlinedIconButtonComponent
+    OutlinedIconButtonComponent,
+    ListComponent,
+    ListItemComponent,
+    MenuItemComponent,
+    MenuComponent,
+    SubMenuComponent,
+    LinearProgressComponent,
+    CircularProgressComponent,
+    RadioComponent
   ],
   imports: [
     CommonModule
