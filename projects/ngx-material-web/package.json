@@ -1,6 +1,6 @@
 {
   "name": "ngx-material-web",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "keywords": ["Material Web", "Material Web 1", "Material Web Angular Implemenation", "NgxMaterialWeb", "Material Design 3", "Angular"],
   "peerDependencies": {
     "@angular/common": "^16.2.0",

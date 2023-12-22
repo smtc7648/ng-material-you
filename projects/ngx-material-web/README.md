@@ -33,8 +33,8 @@ We have used Material Web 1.0 to create the inital angular wrappers for the Matr
 > * Branded Extended Fab with Icon
 > * Branded Extended Fab without Icon
 9. Icon
-<!-- 10. Icon Buttons
+10. Icon Buttons
 > * Icon Button
 > * Filled Icon Button
 > * Filled Tonal Icon Button
-> * Outlined Icon Button -->
+> * Outlined Icon Button
