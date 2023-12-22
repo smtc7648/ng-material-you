@@ -43,11 +43,12 @@ export class AppComponent {
     action = action.toLowerCase();
     switch(action) {
       case 'ok':
-        this.dialog.closeDialog(action);
-        break;
       case 'close':
+      case 'esc':
+      case 'enter':
         this.dialog.closeDialog(action);
         break;
+      default: //DO Nothing
     }
   }
 }

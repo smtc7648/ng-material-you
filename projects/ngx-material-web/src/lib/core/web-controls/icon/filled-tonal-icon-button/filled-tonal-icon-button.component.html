@@ -1,1 +1,13 @@
-<p>filled-tonal-icon-button works!</p>
+<md-filled-tonal-icon-button
+  [attr.aria-label]="ariaLabel"
+  [attr.href]="href"
+  [attr.target]="target"
+  [attr.toggle]="toggle"
+  [attr.selected]="selected"
+  [attr.aria-label-selected]="ariaLabelSelected"
+  [attr.diabled]="disabled"
+  [attr.flip-icon-in-rtl]="flipIconInRtl"
+  [attr.type]="type"
+  [attr.value]="value">
+  <ng-content></ng-content>
+</md-filled-tonal-icon-button>
