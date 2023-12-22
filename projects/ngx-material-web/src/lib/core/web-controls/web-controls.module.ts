@@ -97,10 +97,10 @@ import '@material/web/iconbutton/outlined-icon-button';
     FabComponent,
     BrandedFabComponent,
     IconComponent,
-    // IconButtonComponent,
-    // FilledIconButtonComponent,
-    // FilledTonalIconButtonComponent,
-    // OutlinedIconButtonComponent
+    IconButtonComponent,
+    FilledIconButtonComponent,
+    FilledTonalIconButtonComponent,
+    OutlinedIconButtonComponent
   ],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA

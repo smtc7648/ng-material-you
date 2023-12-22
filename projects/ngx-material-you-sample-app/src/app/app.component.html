@@ -362,6 +362,64 @@
       </ngx-md-elevation>
     </div>
   </div>
+
+  <div class="icon-buttons-wrapper">
+    <h1 class="m-3">Icon Buttons:</h1>
+    <ngx-md-elevation elevation-level="5">
+      <div class="row">
+        <ngx-md-icon-button class="m-3">
+          <ngx-md-icon>check</ngx-md-icon>
+        </ngx-md-icon-button>
+        <ngx-md-filled-icon-button class="m-3">
+          <ngx-md-icon>check</ngx-md-icon>
+        </ngx-md-filled-icon-button>
+        <ngx-md-filled-tonal-icon-button class="m-3">
+          <ngx-md-icon>check</ngx-md-icon>
+        </ngx-md-filled-tonal-icon-button>
+        <ngx-md-outlined-icon-button class="m-3">
+          <ngx-md-icon>check</ngx-md-icon>
+        </ngx-md-outlined-icon-button>
+      </div>
+
+      <div class="row">
+        <ngx-md-icon-button class="m-3" toggle>
+          <ngx-md-icon slot="selected">check</ngx-md-icon>
+          <ngx-md-icon>close</ngx-md-icon>
+        </ngx-md-icon-button>
+        <ngx-md-filled-icon-button class="m-3" toggle>
+          <ngx-md-icon slot="selected">check</ngx-md-icon>
+          <ngx-md-icon>close</ngx-md-icon>
+        </ngx-md-filled-icon-button>
+        <ngx-md-filled-tonal-icon-button class="m-3" toggle>
+          <ngx-md-icon slot="selected">check</ngx-md-icon>
+          <ngx-md-icon>close</ngx-md-icon>
+        </ngx-md-filled-tonal-icon-button>
+        <ngx-md-outlined-icon-button class="m-3" toggle>
+          <ngx-md-icon slot="selected">check</ngx-md-icon>
+          <ngx-md-icon>close</ngx-md-icon>
+        </ngx-md-outlined-icon-button>
+      </div>
+
+      <div class="row">
+        <ngx-md-icon-button class="m-3" toggle selected>
+          <ngx-md-icon slot="selected">check</ngx-md-icon>
+          <ngx-md-icon>close</ngx-md-icon>
+        </ngx-md-icon-button>
+        <ngx-md-filled-icon-button class="m-3" toggle selected>
+          <ngx-md-icon slot="selected">check</ngx-md-icon>
+          <ngx-md-icon>close</ngx-md-icon>
+        </ngx-md-filled-icon-button>
+        <ngx-md-filled-tonal-icon-button class="m-3" toggle selected>
+          <ngx-md-icon slot="selected">check</ngx-md-icon>
+          <ngx-md-icon>close</ngx-md-icon>
+        </ngx-md-filled-tonal-icon-button>
+        <ngx-md-outlined-icon-button class="m-3" toggle selected>
+          <ngx-md-icon slot="selected">check</ngx-md-icon>
+          <ngx-md-icon>close</ngx-md-icon>
+        </ngx-md-outlined-icon-button>
+      </div>
+    </ngx-md-elevation>
+  </div>
 </div>
 
 <!-- Dialogs -->
@@ -373,7 +431,9 @@ type="alert"
   (opened)="onOpend()"
   (close)="onClose()"
   (closed)="onClosed()"
-  (cancel)="onCancel()">
+  (cancel)="onCancel()"
+  (keydown.code.esc)="onClickDialogAction('Esc')"
+  (keydown.code.enter)="onClickDialogAction('Enter')">
   <div headline>This is sample Headline for alert.</div>
   <div content>This is sample Content for alert.</div>
   <div actions>
