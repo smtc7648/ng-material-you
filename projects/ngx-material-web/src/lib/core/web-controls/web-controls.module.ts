@@ -58,8 +58,15 @@ import { MenuComponent } from './menu/menu/menu.component';
 import { SubMenuComponent } from './menu/sub-menu/sub-menu.component';
 import { LinearProgressComponent } from './progress-indicators/linear-progress/linear-progress.component';
 import { CircularProgressComponent } from './progress-indicators/circular-progress/circular-progress.component';
-import { RadioComponent } from './radio/radio.component';
+import '@material/web/progress/linear-progress';
+import '@material/web/progress/circular-progress';
 
+import { RadioComponent } from './radio/radio.component';
+import { SwitchComponent } from './switch/switch.component';
+import '@material/web/switch/switch';
+
+import { SliderComponent } from './slider/slider.component';
+import '@material/web/slider/slider';
 
 @NgModule({
   declarations: [
@@ -91,7 +98,8 @@ import { RadioComponent } from './radio/radio.component';
     SubMenuComponent,
     LinearProgressComponent,
     CircularProgressComponent,
-    RadioComponent
+    SwitchComponent,
+    SliderComponent
   ],
   imports: [
     CommonModule
@@ -117,7 +125,10 @@ import { RadioComponent } from './radio/radio.component';
     IconButtonComponent,
     FilledIconButtonComponent,
     FilledTonalIconButtonComponent,
-    OutlinedIconButtonComponent
+    LinearProgressComponent,
+    CircularProgressComponent,
+    SliderComponent,
+    SwitchComponent,
   ],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA

@@ -1,0 +1,12 @@
+<md-switch
+  #ngxMdSwitch
+  [attr.aria-label]="ariaLabel"
+  [attr.id]="id"
+  [attr.disabled]="disabled"
+  [attr.selected]="selected"
+  [attr.icons]="icons"
+  [attr.show-only-selected-icon]="showOnlySelectedIcon"
+  [attr.required]="required"
+  [attr.value]="value"
+  (input)="onInput($event)"
+  (change)="onChange($event)"></md-switch>

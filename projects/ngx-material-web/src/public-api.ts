@@ -28,4 +28,8 @@ export * from './lib/core/web-controls/icon/icon-button/icon-button.component';
 export * from './lib/core/web-controls/icon/filled-icon-button/filled-icon-button.component';
 export * from './lib/core/web-controls/icon/filled-tonal-icon-button/filled-tonal-icon-button.component';
 export * from './lib/core/web-controls/icon/outlined-icon-button/outlined-icon-button.component';
+export * from './lib/core/web-controls/progress-indicators/linear-progress/linear-progress.component';
+export * from './lib/core/web-controls/progress-indicators/circular-progress/circular-progress.component';
+export * from './lib/core/web-controls/slider/slider.component';
+export * from './lib/core/web-controls/switch/switch.component';
 export * from './lib/core/web-controls/web-controls.module';
