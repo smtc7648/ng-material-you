@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SubMenuComponent } from './sub-menu.component';
+import { RippleComponent } from './ripple.component';
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
-describe('SubMenuComponent', () => {
-  let component: SubMenuComponent;
-  let fixture: ComponentFixture<SubMenuComponent>;
+describe('RippleComponent', () => {
+  let component: RippleComponent;
+  let fixture: ComponentFixture<RippleComponent>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [SubMenuComponent],
+      declarations: [RippleComponent],
       schemas: [CUSTOM_ELEMENTS_SCHEMA]
     });
-    fixture = TestBed.createComponent(SubMenuComponent);
+    fixture = TestBed.createComponent(RippleComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

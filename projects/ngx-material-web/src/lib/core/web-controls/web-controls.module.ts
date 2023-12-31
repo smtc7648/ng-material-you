@@ -169,9 +169,13 @@ import '@material/web/slider/slider';
     OutlinedIconButtonComponent,
     ListComponent,
     ListItemComponent,
+    MenuItemComponent,
+    MenuComponent,
+    SubMenuComponent,
     LinearProgressComponent,
     CircularProgressComponent,
     RadioComponent,
+    RippleComponent,
     FilledSelectComponent,
     OutlinedSelectComponent,
     SelectOptionComponent,
@@ -180,6 +184,8 @@ import '@material/web/slider/slider';
     PrimaryTabComponent,
     SecondaryTabComponent,
     TabsComponent,
+    FilledTextFieldComponent,
+    OutlinedTextFieldComponent
   ],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA
