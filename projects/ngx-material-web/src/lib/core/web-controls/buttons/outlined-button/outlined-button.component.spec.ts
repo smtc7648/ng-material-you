@@ -1,6 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { OutlinedButtonComponent } from './outlined-button.component';
+import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 describe('OutlinedButtonComponent', () => {
   let component: OutlinedButtonComponent;
@@ -8,7 +9,8 @@ describe('OutlinedButtonComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [OutlinedButtonComponent]
+      declarations: [OutlinedButtonComponent],
+      schemas: [CUSTOM_ELEMENTS_SCHEMA]
     });
     fixture = TestBed.createComponent(OutlinedButtonComponent);
     component = fixture.componentInstance;

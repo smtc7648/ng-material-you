@@ -1,6 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { RadioComponent } from './radio.component';
+import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 describe('RadioComponent', () => {
   let component: RadioComponent;
@@ -8,7 +9,8 @@ describe('RadioComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [RadioComponent]
+      declarations: [RadioComponent],
+      schemas: [CUSTOM_ELEMENTS_SCHEMA]
     });
     fixture = TestBed.createComponent(RadioComponent);
     component = fixture.componentInstance;

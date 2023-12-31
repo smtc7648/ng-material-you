@@ -1,6 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { FilledButtonComponent } from './filled-button.component';
+import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 describe('FilledButtonComponent', () => {
   let component: FilledButtonComponent;
@@ -8,7 +9,8 @@ describe('FilledButtonComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [FilledButtonComponent]
+      declarations: [FilledButtonComponent],
+      schemas: [CUSTOM_ELEMENTS_SCHEMA]
     });
     fixture = TestBed.createComponent(FilledButtonComponent);
     component = fixture.componentInstance;

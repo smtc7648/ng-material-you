@@ -1,0 +1,8 @@
+<md-select-option
+  [attr.aria-label]="ariaLabel"
+  [attr.disabled]="disabled"
+  [attr.selected]="selected"
+  [attr.value]="value">
+  <ng-content></ng-content>
+  <ng-content select="[headline]"></ng-content>
+</md-select-option>

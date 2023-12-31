@@ -1,6 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { LinearProgressComponent } from './linear-progress.component';
+import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 describe('LinearProgressComponent', () => {
   let component: LinearProgressComponent;
@@ -8,7 +9,8 @@ describe('LinearProgressComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [LinearProgressComponent]
+      declarations: [LinearProgressComponent],
+      schemas: [CUSTOM_ELEMENTS_SCHEMA]
     });
     fixture = TestBed.createComponent(LinearProgressComponent);
     component = fixture.componentInstance;
