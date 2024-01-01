@@ -1,0 +1,10 @@
+<md-menu-item
+  [attr.disabled]="disabled"
+  [attr.type]="type"
+  [attr.href]="href"
+  [attr.target]="target"
+  [attr.keep-open]="keepOpen"
+  [attr.selected]="selected"
+  (close-menu)="onCloseMenu($event)">
+  <ng-content></ng-content>
+</md-menu-item>

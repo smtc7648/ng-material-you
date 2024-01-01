@@ -1,6 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { TextButtonComponent } from './text-button.component';
+import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 describe('TextButtonComponent', () => {
   let component: TextButtonComponent;
@@ -8,7 +9,8 @@ describe('TextButtonComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [TextButtonComponent]
+      declarations: [TextButtonComponent],
+      schemas: [CUSTOM_ELEMENTS_SCHEMA]
     });
     fixture = TestBed.createComponent(TextButtonComponent);
     component = fixture.componentInstance;

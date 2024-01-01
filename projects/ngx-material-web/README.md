@@ -33,8 +33,27 @@ We have used Material Web 1.0 to create the inital angular wrappers for the Matr
 > * Branded Extended Fab with Icon
 > * Branded Extended Fab without Icon
 9. Icon
-<!-- 10. Icon Buttons
+10. Icon Buttons
 > * Icon Button
 > * Filled Icon Button
 > * Filled Tonal Icon Button
-> * Outlined Icon Button -->
+> * Outlined Icon Button
+11. List
+> * List
+> * List Item [Incomplete - Img Thumbnail]
+12. ~~Menu~~
+> * ~~Menu~~
+> * ~~Sub Menu~~
+> * ~~Menu Item~~
+13. Progress Indicators
+> * Circular Progress
+> * Linear Progress
+14. Radio - Incomplete with Label
+15. ~~Ripple~~
+16. ~~Select~~
+17. Sliders
+18. Switch
+19. ~~Tabs~~
+20. ~~Text Fields~~
+
+>**Note:** Components which are partially implemented are stricked out or mentioned with incomplete.

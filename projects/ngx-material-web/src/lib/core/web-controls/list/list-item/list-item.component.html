@@ -1,0 +1,16 @@
+<md-list-item
+  [attr.interactive]="interactive"
+  [attr.disabled]="disabled"
+  [attr.type]="type"
+  [attr.href]="href"
+  [attr.target]="target"
+  [attr.headline]="headline"
+  (request-activation)="triggerRequestActivation($event)">
+  <div slot="headline" *ngIf="headline !== ''">{{headline}}</div>
+  <ng-content></ng-content>
+  <ng-content select="[headline]"></ng-content>
+  <ng-content select="[supporting-text]"></ng-content>
+  <ng-content select="[trailing-supporting-text]"></ng-content>
+  <ng-content select="[start]"></ng-content>
+  <ng-content select="[end]"></ng-content>
+</md-list-item>

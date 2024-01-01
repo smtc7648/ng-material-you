@@ -1,0 +1,11 @@
+.ngx-radio-wrapper {
+  display: flex;
+  align-items: center;
+  label {
+    display: inline-flex;
+    place-items: center;
+    gap: 8px;
+    font-family: Roboto, system-ui;
+    color: var(--md-sys-color-on-background, #000);
+  }
+}

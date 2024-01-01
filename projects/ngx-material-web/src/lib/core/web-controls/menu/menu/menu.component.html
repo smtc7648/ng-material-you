@@ -1,0 +1,22 @@
+<md-menu
+  #ngxMdMenu
+  [attr.anchor]="anchor"
+  [attr.positioning]="positioning"
+  [attr.quick]="quick"
+  [attr.has-overflow]="hasOverflow"
+  [attr.open]="open"
+  [attr.x-offset]="xOffset"
+  [attr.y-offset]="yOffset"
+  [attr.typehead-delay]="typeheadDelay"
+  [attr.anchor-corner]="anchorCorner"
+  [attr.menu-corner]="menuCorner"
+  [attr.stay-open-on-outside-click]="stayOpenOnOutsideClick"
+  [attr.stay-open-on-focusout]="stayOpenOnFocusout"
+  [attr.skip-restore-focus]="skipRestoreFocus"
+  [attr.default-focus]="defaultFocus"
+  (opening)="onOpening($event)"
+  (opened)="onOpened($event)"
+  (closing)="onClosing($event)"
+  (closed)="onClosed($event)">
+<ng-content></ng-content>
+</md-menu>

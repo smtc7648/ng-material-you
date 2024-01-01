@@ -1,6 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { InputChipComponent } from './input-chip.component';
+import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 describe('InputChipComponent', () => {
   let component: InputChipComponent;
@@ -8,7 +9,8 @@ describe('InputChipComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [InputChipComponent]
+      declarations: [InputChipComponent],
+      schemas: [CUSTOM_ELEMENTS_SCHEMA]
     });
     fixture = TestBed.createComponent(InputChipComponent);
     component = fixture.componentInstance;

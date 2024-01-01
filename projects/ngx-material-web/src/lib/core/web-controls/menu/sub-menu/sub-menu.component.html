@@ -1,0 +1,15 @@
+<md-sub-menu
+  #NgxMdSubMenu
+  [attr.anchor-corner]="anchorCorner"
+  [attr.menu-corner]="menuCorner"
+  [attr.hover-open-delay]="hoverOpenDelay"
+  [attr.hover-close-delay]="hoverCloseDelay"
+  [attr.md-sub-menu]="isSubMenu"
+  (deactivate-items)="onDeactivateItems($event)"
+  (request-activation)="onRequestActivation($event)"
+  (deactivate-typehead)="onDeactivateTypehead($event)"
+  (activate-typehead)="onActivateTypehead($event)">
+  <ng-content></ng-content>
+</md-sub-menu>
+<!-- Check the line -->
+<!-- [attr.md-sub-menu]="isSubMenu"> -->

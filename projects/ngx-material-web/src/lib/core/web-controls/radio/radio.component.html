@@ -1,0 +1,8 @@
+<div class="ngx-radio-wrapper">
+  <md-radio [attr.id]="id" [attr.name]="name" [attr.value]="value" [attr.checked]="checked" [attr.disabled]="disabled"
+    [attr.aria-label]="ariaLabel" touch-target="wrapper" (input)="onInput($event)" (change)="onChange($event)">
+  </md-radio>
+  <label [attr.for]="id">
+    <ng-content></ng-content>
+  </label>
+</div>
