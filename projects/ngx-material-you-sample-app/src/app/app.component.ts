@@ -1,5 +1,6 @@
-import { Component, ViewChild } from '@angular/core';
+import { Component, ElementRef, ViewChild } from '@angular/core';
 import { DialogComponent } from 'projects/ngx-material-web/src/lib/core/web-controls/dialog/dialog.component';
+import { MenuComponent } from 'projects/ngx-material-web/src/public-api';
 
 @Component({
   selector: 'app-root',
@@ -7,9 +8,10 @@ import { DialogComponent } from 'projects/ngx-material-web/src/lib/core/web-cont
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'ngx-material-you-sample-app';
-
+  @ViewChild('usageMenuById') usageMenuById!: MenuComponent;
   @ViewChild('sampleDialog') dialog!: DialogComponent;
+  @ViewChild('sideBar') sidebar!: ElementRef<HTMLDivElement>;
+  title = 'ngx-material-you-sample-app';
   isDialogOpened = false;
 
   onOpen(): void {
@@ -50,5 +52,35 @@ export class AppComponent {
         break;
       default: //DO Nothing
     }
+  }
+
+  onClickSetWithIdRef(e: Event): void {
+    this.usageMenuById.show();
+  }
+
+  onUsageMenuByIdOpened(): void {
+    console.log("menu opened");
+  }
+
+  onUsageMenuByIdClosed(): void {
+    console.log("menu closed");
+  }
+
+  onSwitchInput(e: any): void {
+    console.log("Switch Input Triggered");
+    console.log(e);
+  }
+
+  onSwitchChange(e: any): void {
+    console.log("Switch Change Triggered");
+    console.log(e);
+  }
+
+  onClickToggleMenu(e: Event) {
+    this.sidebar.nativeElement.classList.toggle('hide');
+  }
+
+  onTabChanges(e: any) {
+    console.log("ON TAB CHANGE")
   }
 }

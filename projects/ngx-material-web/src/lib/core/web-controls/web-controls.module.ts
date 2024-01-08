@@ -93,8 +93,8 @@ import '@material/web/tabs/secondary-tab';
 
 import { FilledTextFieldComponent } from './text-filleds/filled-text-field/filled-text-field.component';
 import { OutlinedTextFieldComponent } from './text-filleds/outlined-text-field/outlined-text-field.component';
-import '@material/web/field/filled-field';
-import '@material/web/field/outlined-field';
+import '@material/web/textfield/filled-text-field';
+import '@material/web/textfield/outlined-text-field';
 
 import { SliderComponent } from './slider/slider.component';
 import '@material/web/slider/slider';

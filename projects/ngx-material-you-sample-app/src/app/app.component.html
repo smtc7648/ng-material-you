@@ -1,438 +1,964 @@
 <router-outlet></router-outlet>
 
-<div class="app-wrapper">
-  <div class="buttons-wrapper">
-    <h1 class="m-3">Buttons:</h1>
-    <ngx-md-elevation elevation-level="5">
-      <div class="row">
-        <ngx-md-elevated-button class="m-5">Elevated Button</ngx-md-elevated-button>
-        <ngx-md-filled-tonal-button class="m-5">Filled Tonal Button</ngx-md-filled-tonal-button>
-        <ngx-md-filled-button class="m-5">Filled Button</ngx-md-filled-button>
-        <ngx-md-outlined-button class="m-5">Outlined Button</ngx-md-outlined-button>
-        <ngx-md-text-button class="m-5">Text Button</ngx-md-text-button>
-      </div>
-
-      <div class="row">
-        <ngx-md-elevated-button class="m-5">
-          Send
-          <svg slot="icon" viewBox="0 0 48 48">
-            <path d="M6 40V8l38 16Zm3-4.65L36.2 24 9 12.5v8.4L21.1 24 9 27Zm0 0V12.5 27Z" />
-          </svg>
-        </ngx-md-elevated-button>
-        <ngx-md-filled-tonal-button class="m-5">
-          Send
-          <svg slot="icon" viewBox="0 0 48 48">
-            <path d="M6 40V8l38 16Zm3-4.65L36.2 24 9 12.5v8.4L21.1 24 9 27Zm0 0V12.5 27Z" />
-          </svg>
-        </ngx-md-filled-tonal-button>
-        <ngx-md-filled-button class="m-5">
-          Send
-          <svg slot="icon" viewBox="0 0 48 48">
-            <path d="M6 40V8l38 16Zm3-4.65L36.2 24 9 12.5v8.4L21.1 24 9 27Zm0 0V12.5 27Z" />
-          </svg>
-        </ngx-md-filled-button>
-        <ngx-md-outlined-button class="m-5">
-          Send
-          <svg slot="icon" viewBox="0 0 48 48">
-            <path d="M6 40V8l38 16Zm3-4.65L36.2 24 9 12.5v8.4L21.1 24 9 27Zm0 0V12.5 27Z" />
-          </svg>
-        </ngx-md-outlined-button>
-        <ngx-md-text-button class="m-5">
-          Send
-          <svg slot="icon" viewBox="0 0 48 48">
-            <path d="M6 40V8l38 16Zm3-4.65L36.2 24 9 12.5v8.4L21.1 24 9 27Zm0 0V12.5 27Z" />
-          </svg>
-        </ngx-md-text-button>
-      </div>
-
-      <div class="row">
-        <ngx-md-elevated-button trailing-icon class="m-5">
-          Open
-          <svg slot="icon" viewBox="0 0 48 48">
-            <path
-              d="M9 42q-1.2 0-2.1-.9Q6 40.2 6 39V9q0-1.2.9-2.1Q7.8 6 9 6h13.95v3H9v30h30V25.05h3V39q0 1.2-.9 2.1-.9.9-2.1.9Zm10.1-10.95L17 28.9 36.9 9H25.95V6H42v16.05h-3v-10.9Z" />
-          </svg>
-        </ngx-md-elevated-button>
-        <ngx-md-filled-tonal-button class="m-5" trailing-icon>
-          Open
-          <svg slot="icon" viewBox="0 0 48 48">
-            <path
-              d="M9 42q-1.2 0-2.1-.9Q6 40.2 6 39V9q0-1.2.9-2.1Q7.8 6 9 6h13.95v3H9v30h30V25.05h3V39q0 1.2-.9 2.1-.9.9-2.1.9Zm10.1-10.95L17 28.9 36.9 9H25.95V6H42v16.05h-3v-10.9Z" />
-          </svg>
-        </ngx-md-filled-tonal-button>
-        <ngx-md-filled-button class="m-5" trailing-icon>
-          Open
-          <svg slot="icon" viewBox="0 0 48 48">
-            <path
-              d="M9 42q-1.2 0-2.1-.9Q6 40.2 6 39V9q0-1.2.9-2.1Q7.8 6 9 6h13.95v3H9v30h30V25.05h3V39q0 1.2-.9 2.1-.9.9-2.1.9Zm10.1-10.95L17 28.9 36.9 9H25.95V6H42v16.05h-3v-10.9Z" />
-          </svg>
-        </ngx-md-filled-button>
-        <ngx-md-outlined-button class="m-5" trailing-icon>
-          Open
-          <svg slot="icon" viewBox="0 0 48 48">
-            <path
-              d="M9 42q-1.2 0-2.1-.9Q6 40.2 6 39V9q0-1.2.9-2.1Q7.8 6 9 6h13.95v3H9v30h30V25.05h3V39q0 1.2-.9 2.1-.9.9-2.1.9Zm10.1-10.95L17 28.9 36.9 9H25.95V6H42v16.05h-3v-10.9Z" />
-          </svg>
-        </ngx-md-outlined-button>
-        <ngx-md-text-button class="m-5" trailing-icon>
-          Open
-          <svg slot="icon" viewBox="0 0 48 48">
-            <path
-              d="M9 42q-1.2 0-2.1-.9Q6 40.2 6 39V9q0-1.2.9-2.1Q7.8 6 9 6h13.95v3H9v30h30V25.05h3V39q0 1.2-.9 2.1-.9.9-2.1.9Zm10.1-10.95L17 28.9 36.9 9H25.95V6H42v16.05h-3v-10.9Z" />
-          </svg>
-        </ngx-md-text-button>
-      </div>
-    </ngx-md-elevation>
+<div class="viewport">
+  <div class="sidebar hide" #sideBar>
   </div>
-
-  <div class="checkboxes-wrapper">
-    <h1 class="m-3">Checkboxes:</h1>
-    <ngx-md-elevation elevation-level="5">
-      <div class="row">
-        <ngx-md-checkbox label="Checkbox 1" aria-label="Checkbox 1" for="Checkbox demo"></ngx-md-checkbox>
-        <ngx-md-checkbox label="Checkbox 2" aria-label="Checkbox 2" [indeterminate]="true"></ngx-md-checkbox>
-        <ngx-md-checkbox label="Checkbox 3" aria-label="Checkbox 3" [checked]="true"></ngx-md-checkbox>
-        <ngx-md-checkbox label="Checkbox 4" aria-label="Checkbox 4" [disabled]="true"></ngx-md-checkbox>
-      </div>
-    </ngx-md-elevation>
+  <div class="sidebar-toggle-button">
+    <ngx-md-icon-button toggle class="m-5" selected (click)="onClickToggleMenu($event)">
+      <ngx-md-icon>close</ngx-md-icon>
+      <ngx-md-icon slot='selected'>menu</ngx-md-icon>
+    </ngx-md-icon-button>
   </div>
-
-  <div class="chips-wrapper">
-    <h1 class="m-3">Chips:</h1>
-    <ngx-md-elevation elevation-level="5">
-      <div class="row">
-        <ngx-md-chip-set aria-labelledby="chip set label" aria-label="chip set aria label">
-          <ngx-md-assist-chip label="Assist Chip 0" aria-label="Assist Chip 0 Aria Label."></ngx-md-assist-chip>
-          <ngx-md-assist-chip label="Assist Chip 1" disabled></ngx-md-assist-chip>
-          <ngx-md-assist-chip label="Assist Chip 2">
-            <svg slot="icon" viewBox="0 0 48 48">
-              <path d="M6 40V8l38 16Zm3-4.65L36.2 24 9 12.5v8.4L21.1 24 9 27Zm0 0V12.5 27Z" />
-            </svg>
-          </ngx-md-assist-chip>
-          <ngx-md-assist-chip label="Assist Chip 3 with Material Icon">
-            <span slot="icon" viewBox="0 0 48 48" class="material-symbols-outlined">
-              filter_list
-            </span>
-          </ngx-md-assist-chip>
-        </ngx-md-chip-set>
-      </div>
-
-      <div class="row">
-        <ngx-md-chip-set aria-label="filter chip set label">
-          <ngx-md-filter-chip label="Filter Chip 0" selected removable elevated></ngx-md-filter-chip>
-          <ngx-md-filter-chip label="Filter Chip 1"></ngx-md-filter-chip>
-          <ngx-md-filter-chip label="Filter Chip 2">
-            <svg slot="icon" viewBox="0 0 48 48">
-              <path d="M6 40V8l38 16Zm3-4.65L36.2 24 9 12.5v8.4L21.1 24 9 27Zm0 0V12.5 27Z" />
-            </svg>
-          </ngx-md-filter-chip>
-          <ngx-md-filter-chip label="Assist Chip 3 with Material Icon">
-            <span slot="icon" viewBox="0 0 48 48" class="material-symbols-outlined">
-              filter_list
-            </span>
-          </ngx-md-filter-chip>
-        </ngx-md-chip-set>
-      </div>
-
-      <div class="row">
-        <ngx-md-chip-set>
-          <ngx-md-input-chip label="Input Chip 0" remove-only avatar disabled always-focusable></ngx-md-input-chip>
-          <ngx-md-input-chip label="Input Chip 1"></ngx-md-input-chip>
-          <ngx-md-input-chip label="Input Chip 2">
-            <svg slot="icon" viewBox="0 0 48 48">
-              <path d="M6 40V8l38 16Zm3-4.65L36.2 24 9 12.5v8.4L21.1 24 9 27Zm0 0V12.5 27Z" />
-            </svg>
-          </ngx-md-input-chip>
-          <ngx-md-input-chip label="Assist Chip 3 with Material Icon">
-            <span slot="icon" viewBox="0 0 48 48" class="material-symbols-outlined">
-              filter_list
-            </span>
-          </ngx-md-input-chip>
-        </ngx-md-chip-set>
-      </div>
-
-      <div class="row">
-        <ngx-md-chip-set>
-          <ngx-md-suggestion-chip label="Suggestion Chip 0" elevated></ngx-md-suggestion-chip>
-          <ngx-md-suggestion-chip label="Suggestion Chip 1"></ngx-md-suggestion-chip>
-          <ngx-md-suggestion-chip label="Suggestion Chip 2">
-            <svg slot="icon" viewBox="0 0 48 48">
-              <path d="M6 40V8l38 16Zm3-4.65L36.2 24 9 12.5v8.4L21.1 24 9 27Zm0 0V12.5 27Z" />
-            </svg>
-          </ngx-md-suggestion-chip>
-          <ngx-md-suggestion-chip label="Assist Chip 3 with Material Icon">
-            <span slot="icon" viewBox="0 0 48 48" class="material-symbols-outlined">
-              filter_list
-            </span>
-          </ngx-md-suggestion-chip>
-        </ngx-md-chip-set>
-      </div>
-    </ngx-md-elevation>
-  </div>
-
-  <div class="divider-wrapper">
-    <h1 class="m-3">Divider:</h1>
-    <ngx-md-elevation elevation-level="5">
-      <div class="row">
-        <section>
-          <p>Lorem ipsum... DEFAULT</p>
-          <ngx-md-divider role="separator"></ngx-md-divider>
-          <p>Lorem ipsum... DEFAULT</p>
-        </section>
-      </div>
-
-      <div class="row">
-        <section>
-          <p>Lorem ipsum... INSET</p>
-          <ngx-md-divider [inset]="true"></ngx-md-divider>
-          <p>Lorem ipsum... INSET</p>
-        </section>
-      </div>
-
-      <div class="row">
-        <section>
-          <p>Lorem ipsum... INSET START</p>
-          <ngx-md-divider [inset-start]="true"></ngx-md-divider>
-          <p>Lorem ipsum... INSET START</p>
-        </section>
-      </div>
-
-      <div class="row">
-        <section>
-          <p>Lorem ipsum... INSET END</p>
-          <ngx-md-divider [inset-end]="true"></ngx-md-divider>
-          <p>Lorem ipsum... INSET END</p>
-        </section>
-      </div>
-    </ngx-md-elevation>
-  </div>
-
-  <div class="elevation-wrapper">
-    <h1 class="m-3">Elevation:</h1>
-    <ngx-md-elevation elevation-level="5">
-      <div class="row">
-        <ngx-md-elevation elevation-level="0" class="m-3"><span>Elevation Level 0</span></ngx-md-elevation>
-        <ngx-md-elevation elevation-level="1" class="m-3"><span>Elevation Level 1</span></ngx-md-elevation>
-        <ngx-md-elevation elevation-level="2" class="m-3"><span>Elevation Level 2</span></ngx-md-elevation>
-        <ngx-md-elevation elevation-level="3" class="m-3"><span>Elevation Level 3</span></ngx-md-elevation>
-        <ngx-md-elevation elevation-level="4" class="m-3"><span>Elevation Level 4</span></ngx-md-elevation>
-        <ngx-md-elevation elevation-level="5" class="m-3"><span>Elevation Level 5</span></ngx-md-elevation>
-      </div>
-
-      <div class="row">
-        <ngx-md-elevation elevation-level="0" class="m-3" [animated]="true"><span>Elevation Level 0</span></ngx-md-elevation>
-        <ngx-md-elevation elevation-level="1" class="m-3" [animated]="true"><span>Elevation Level 1</span></ngx-md-elevation>
-        <ngx-md-elevation elevation-level="2" class="m-3" [animated]="true"><span>Elevation Level 2</span></ngx-md-elevation>
-        <ngx-md-elevation elevation-level="3" class="m-3" [animated]="true"><span>Elevation Level 3</span></ngx-md-elevation>
-        <ngx-md-elevation elevation-level="4" class="m-3" [animated]="true"><span>Elevation Level 4</span></ngx-md-elevation>
-        <ngx-md-elevation elevation-level="5" class="m-3" [animated]="true"><span>Elevation Level 5</span></ngx-md-elevation>
-      </div>
-    </ngx-md-elevation>
-  </div>
-
-  <div class="dialog-wrapper">
-    <h1 class="m-3">Dialogs:</h1>
-    <ngx-md-elevation elevation-level="5">
-      <ngx-md-elevated-button (click)="onClickOpenDialog()">Open Dialog</ngx-md-elevated-button>
-    </ngx-md-elevation>
-  </div>
-
-  <div class="fab-wrapper">
-    <h1 class="m-3">Floating Action Button (FAB):</h1>
-    <div class="row m-5">
+  <div class="app-wrapper">
+    <div class="buttons-wrapper">
+      <h1 class="m-3">Buttons:</h1>
       <ngx-md-elevation elevation-level="5">
         <div class="row">
-          <ngx-md-fab variant="primary" class="m-3">
-            <ngx-md-icon slot="icon">edit</ngx-md-icon>
-          </ngx-md-fab>
-          <ngx-md-fab variant="secondary" class="m-3">
-            <ngx-md-icon slot="icon">edit</ngx-md-icon>
-          </ngx-md-fab>
-          <ngx-md-fab variant="tertiary" class="m-3">
-            <ngx-md-icon slot="icon">edit</ngx-md-icon>
-          </ngx-md-fab>
+          <ngx-md-elevated-button class="m-5">Elevated Button</ngx-md-elevated-button>
+          <ngx-md-filled-tonal-button class="m-5">Filled Tonal Button</ngx-md-filled-tonal-button>
+          <ngx-md-filled-button class="m-5">Filled Button</ngx-md-filled-button>
+          <ngx-md-outlined-button class="m-5">Outlined Button</ngx-md-outlined-button>
+          <ngx-md-text-button class="m-5">Text Button</ngx-md-text-button>
         </div>
+
         <div class="row">
-          <ngx-md-fab class="m-3" label="Edit" variant="primary">
-            <ngx-md-icon slot="icon">edit</ngx-md-icon>
-          </ngx-md-fab>
-          <ngx-md-fab class="m-3" label="Edit" variant="secondary">
-            <ngx-md-icon slot="icon">edit</ngx-md-icon>
-          </ngx-md-fab>
-          <ngx-md-fab class="m-3" label="Edit" variant="tertiary">
-            <ngx-md-icon slot="icon">edit</ngx-md-icon>
-          </ngx-md-fab>
-          <ngx-md-fab class="m-3" label="Edit">
-            <ngx-md-icon slot="icon">edit</ngx-md-icon>
-          </ngx-md-fab>
+          <ngx-md-elevated-button class="m-5">
+            Send
+            <svg slot="icon" viewBox="0 0 48 48">
+              <path d="M6 40V8l38 16Zm3-4.65L36.2 24 9 12.5v8.4L21.1 24 9 27Zm0 0V12.5 27Z" />
+            </svg>
+          </ngx-md-elevated-button>
+          <ngx-md-filled-tonal-button class="m-5">
+            Send
+            <svg slot="icon" viewBox="0 0 48 48">
+              <path d="M6 40V8l38 16Zm3-4.65L36.2 24 9 12.5v8.4L21.1 24 9 27Zm0 0V12.5 27Z" />
+            </svg>
+          </ngx-md-filled-tonal-button>
+          <ngx-md-filled-button class="m-5">
+            Send
+            <svg slot="icon" viewBox="0 0 48 48">
+              <path d="M6 40V8l38 16Zm3-4.65L36.2 24 9 12.5v8.4L21.1 24 9 27Zm0 0V12.5 27Z" />
+            </svg>
+          </ngx-md-filled-button>
+          <ngx-md-outlined-button class="m-5">
+            Send
+            <svg slot="icon" viewBox="0 0 48 48">
+              <path d="M6 40V8l38 16Zm3-4.65L36.2 24 9 12.5v8.4L21.1 24 9 27Zm0 0V12.5 27Z" />
+            </svg>
+          </ngx-md-outlined-button>
+          <ngx-md-text-button class="m-5">
+            Send
+            <svg slot="icon" viewBox="0 0 48 48">
+              <path d="M6 40V8l38 16Zm3-4.65L36.2 24 9 12.5v8.4L21.1 24 9 27Zm0 0V12.5 27Z" />
+            </svg>
+          </ngx-md-text-button>
         </div>
+
         <div class="row">
-          <ngx-md-fab class="m-3" label="Edit" variant="primary"></ngx-md-fab>
-          <ngx-md-fab class="m-3" label="Edit" variant="secondary"></ngx-md-fab>
-          <ngx-md-fab class="m-3" label="Edit" variant="tertiary"></ngx-md-fab>
-          <ngx-md-fab class="m-3" label="Edit"></ngx-md-fab>
-        </div>
-        <div class="row">
-          <ngx-md-fab class="m-3" lowered label="Lowered Edit" variant="primary"></ngx-md-fab>
-          <ngx-md-fab class="m-3" lowered label="Lowered Edit" variant="secondary"></ngx-md-fab>
-          <ngx-md-fab class="m-3" lowered label="Lowered Edit" variant="tertiary"></ngx-md-fab>
-          <ngx-md-fab class="m-3" lowered label="Lowered Edit"></ngx-md-fab>
-        </div>
-        <div class="row">
-          <ngx-md-fab class="m-3" size="small">
-            <ngx-md-icon slot="icon">edit</ngx-md-icon>
-          </ngx-md-fab>
-          <ngx-md-fab class="m-3" size="small" touch-target="none">
-            <ngx-md-icon slot="icon">edit</ngx-md-icon>
-          </ngx-md-fab>
-          <ngx-md-fab class="m-3" size="medium">
-            <ngx-md-icon slot="icon">edit</ngx-md-icon>
-          </ngx-md-fab>
-          <ngx-md-fab class="m-3">
-            <ngx-md-icon slot="icon">edit</ngx-md-icon>
-          </ngx-md-fab>
-          <ngx-md-fab class="m-3" size="large">
-            <ngx-md-icon slot="icon">edit</ngx-md-icon>
-          </ngx-md-fab>
+          <ngx-md-elevated-button trailing-icon class="m-5">
+            Open
+            <svg slot="icon" viewBox="0 0 48 48">
+              <path
+                d="M9 42q-1.2 0-2.1-.9Q6 40.2 6 39V9q0-1.2.9-2.1Q7.8 6 9 6h13.95v3H9v30h30V25.05h3V39q0 1.2-.9 2.1-.9.9-2.1.9Zm10.1-10.95L17 28.9 36.9 9H25.95V6H42v16.05h-3v-10.9Z" />
+            </svg>
+          </ngx-md-elevated-button>
+          <ngx-md-filled-tonal-button class="m-5" trailing-icon>
+            Open
+            <svg slot="icon" viewBox="0 0 48 48">
+              <path
+                d="M9 42q-1.2 0-2.1-.9Q6 40.2 6 39V9q0-1.2.9-2.1Q7.8 6 9 6h13.95v3H9v30h30V25.05h3V39q0 1.2-.9 2.1-.9.9-2.1.9Zm10.1-10.95L17 28.9 36.9 9H25.95V6H42v16.05h-3v-10.9Z" />
+            </svg>
+          </ngx-md-filled-tonal-button>
+          <ngx-md-filled-button class="m-5" trailing-icon>
+            Open
+            <svg slot="icon" viewBox="0 0 48 48">
+              <path
+                d="M9 42q-1.2 0-2.1-.9Q6 40.2 6 39V9q0-1.2.9-2.1Q7.8 6 9 6h13.95v3H9v30h30V25.05h3V39q0 1.2-.9 2.1-.9.9-2.1.9Zm10.1-10.95L17 28.9 36.9 9H25.95V6H42v16.05h-3v-10.9Z" />
+            </svg>
+          </ngx-md-filled-button>
+          <ngx-md-outlined-button class="m-5" trailing-icon>
+            Open
+            <svg slot="icon" viewBox="0 0 48 48">
+              <path
+                d="M9 42q-1.2 0-2.1-.9Q6 40.2 6 39V9q0-1.2.9-2.1Q7.8 6 9 6h13.95v3H9v30h30V25.05h3V39q0 1.2-.9 2.1-.9.9-2.1.9Zm10.1-10.95L17 28.9 36.9 9H25.95V6H42v16.05h-3v-10.9Z" />
+            </svg>
+          </ngx-md-outlined-button>
+          <ngx-md-text-button class="m-5" trailing-icon>
+            Open
+            <svg slot="icon" viewBox="0 0 48 48">
+              <path
+                d="M9 42q-1.2 0-2.1-.9Q6 40.2 6 39V9q0-1.2.9-2.1Q7.8 6 9 6h13.95v3H9v30h30V25.05h3V39q0 1.2-.9 2.1-.9.9-2.1.9Zm10.1-10.95L17 28.9 36.9 9H25.95V6H42v16.05h-3v-10.9Z" />
+            </svg>
+          </ngx-md-text-button>
         </div>
       </ngx-md-elevation>
     </div>
-    <h1 class="m-3">Branded FAB:</h1>
-    <div class="row m-5">
+
+    <div class="checkboxes-wrapper">
+      <h1 class="m-3">Checkboxes:</h1>
       <ngx-md-elevation elevation-level="5">
         <div class="row">
-          <ngx-md-branded-fab class="m-3" size="small" aria-label="Add">
-            <svg slot="icon" viewBox="0 0 36 36">
-              <path fill="#34A853" d="M16 16v14h4V20z"></path>
-              <path fill="#4285F4" d="M30 16H20l-4 4h14z"></path>
-              <path fill="#FBBC05" d="M6 16v4h10l4-4z"></path>
-              <path fill="#EA4335" d="M20 16V6h-4v14z"></path>
-              <path fill="none" d="M0 0h36v36H0z"></path>
-            </svg>
-          </ngx-md-branded-fab>
-
-          <ngx-md-branded-fab class="m-3" label="Add">
-            <svg slot="icon" viewBox="0 0 36 36">
-              <path fill="#34A853" d="M16 16v14h4V20z"></path>
-              <path fill="#4285F4" d="M30 16H20l-4 4h14z"></path>
-              <path fill="#FBBC05" d="M6 16v4h10l4-4z"></path>
-              <path fill="#EA4335" d="M20 16V6h-4v14z"></path>
-              <path fill="none" d="M0 0h36v36H0z"></path>
-            </svg>
-          </ngx-md-branded-fab>
-
-          <ngx-md-branded-fab class="m-3" aria-label="Add">
-            <svg slot="icon" viewBox="0 0 36 36">
-              <path fill="#34A853" d="M16 16v14h4V20z"></path>
-              <path fill="#4285F4" d="M30 16H20l-4 4h14z"></path>
-              <path fill="#FBBC05" d="M6 16v4h10l4-4z"></path>
-              <path fill="#EA4335" d="M20 16V6h-4v14z"></path>
-              <path fill="none" d="M0 0h36v36H0z"></path>
-            </svg>
-          </ngx-md-branded-fab>
-          <ngx-md-branded-fab class="m-3" size="large" aria-label="Add">
-            <svg slot="icon" viewBox="0 0 36 36">
-              <path fill="#34A853" d="M16 16v14h4V20z"></path>
-              <path fill="#4285F4" d="M30 16H20l-4 4h14z"></path>
-              <path fill="#FBBC05" d="M6 16v4h10l4-4z"></path>
-              <path fill="#EA4335" d="M20 16V6h-4v14z"></path>
-              <path fill="none" d="M0 0h36v36H0z"></path>
-            </svg>
-          </ngx-md-branded-fab>
-
-          <ngx-md-branded-fab class="m-3" aria-label="Add" lowered>
-            <svg slot="icon" viewBox="0 0 36 36">
-              <path fill="#34A853" d="M16 16v14h4V20z"></path>
-              <path fill="#4285F4" d="M30 16H20l-4 4h14z"></path>
-              <path fill="#FBBC05" d="M6 16v4h10l4-4z"></path>
-              <path fill="#EA4335" d="M20 16V6h-4v14z"></path>
-              <path fill="none" d="M0 0h36v36H0z"></path>
-            </svg>
-          </ngx-md-branded-fab>
-          <ngx-md-branded-fab class="m-3" size="large" aria-label="Add" lowered>
-            <svg slot="icon" viewBox="0 0 36 36">
-              <path fill="#34A853" d="M16 16v14h4V20z"></path>
-              <path fill="#4285F4" d="M30 16H20l-4 4h14z"></path>
-              <path fill="#FBBC05" d="M6 16v4h10l4-4z"></path>
-              <path fill="#EA4335" d="M20 16V6h-4v14z"></path>
-              <path fill="none" d="M0 0h36v36H0z"></path>
-            </svg>
-          </ngx-md-branded-fab>
+          <ngx-md-checkbox label="Checkbox 1" aria-label="Checkbox 1" for="Checkbox demo"></ngx-md-checkbox>
+          <ngx-md-checkbox label="Checkbox 2" aria-label="Checkbox 2" [indeterminate]="true"></ngx-md-checkbox>
+          <ngx-md-checkbox label="Checkbox 3" aria-label="Checkbox 3" [checked]="true"></ngx-md-checkbox>
+          <ngx-md-checkbox label="Checkbox 4" aria-label="Checkbox 4" [disabled]="true"></ngx-md-checkbox>
         </div>
       </ngx-md-elevation>
     </div>
-  </div>
 
-  <div class="icon-buttons-wrapper">
-    <h1 class="m-3">Icon Buttons:</h1>
-    <ngx-md-elevation elevation-level="5">
-      <div class="row">
-        <ngx-md-icon-button class="m-3">
-          <ngx-md-icon>check</ngx-md-icon>
-        </ngx-md-icon-button>
-        <ngx-md-filled-icon-button class="m-3">
-          <ngx-md-icon>check</ngx-md-icon>
-        </ngx-md-filled-icon-button>
-        <ngx-md-filled-tonal-icon-button class="m-3">
-          <ngx-md-icon>check</ngx-md-icon>
-        </ngx-md-filled-tonal-icon-button>
-        <ngx-md-outlined-icon-button class="m-3">
-          <ngx-md-icon>check</ngx-md-icon>
-        </ngx-md-outlined-icon-button>
-      </div>
+    <div class="chips-wrapper">
+      <h1 class="m-3">Chips:</h1>
+      <ngx-md-elevation elevation-level="5">
+        <div class="row">
+          <ngx-md-chip-set aria-labelledby="chip set label" aria-label="chip set aria label">
+            <ngx-md-assist-chip label="Assist Chip 0" aria-label="Assist Chip 0 Aria Label."></ngx-md-assist-chip>
+            <ngx-md-assist-chip label="Assist Chip 1" disabled></ngx-md-assist-chip>
+            <ngx-md-assist-chip label="Assist Chip 2">
+              <svg slot="icon" viewBox="0 0 48 48">
+                <path d="M6 40V8l38 16Zm3-4.65L36.2 24 9 12.5v8.4L21.1 24 9 27Zm0 0V12.5 27Z" />
+              </svg>
+            </ngx-md-assist-chip>
+            <ngx-md-assist-chip label="Assist Chip 3 with Material Icon">
+              <span slot="icon" viewBox="0 0 48 48" class="material-symbols-outlined">
+                filter_list
+              </span>
+            </ngx-md-assist-chip>
+          </ngx-md-chip-set>
+        </div>
 
-      <div class="row">
-        <ngx-md-icon-button class="m-3" toggle>
-          <ngx-md-icon slot="selected">check</ngx-md-icon>
-          <ngx-md-icon>close</ngx-md-icon>
-        </ngx-md-icon-button>
-        <ngx-md-filled-icon-button class="m-3" toggle>
-          <ngx-md-icon slot="selected">check</ngx-md-icon>
-          <ngx-md-icon>close</ngx-md-icon>
-        </ngx-md-filled-icon-button>
-        <ngx-md-filled-tonal-icon-button class="m-3" toggle>
-          <ngx-md-icon slot="selected">check</ngx-md-icon>
-          <ngx-md-icon>close</ngx-md-icon>
-        </ngx-md-filled-tonal-icon-button>
-        <ngx-md-outlined-icon-button class="m-3" toggle>
-          <ngx-md-icon slot="selected">check</ngx-md-icon>
-          <ngx-md-icon>close</ngx-md-icon>
-        </ngx-md-outlined-icon-button>
-      </div>
+        <div class="row">
+          <ngx-md-chip-set aria-label="filter chip set label">
+            <ngx-md-filter-chip label="Filter Chip 0" selected removable elevated></ngx-md-filter-chip>
+            <ngx-md-filter-chip label="Filter Chip 1"></ngx-md-filter-chip>
+            <ngx-md-filter-chip label="Filter Chip 2">
+              <svg slot="icon" viewBox="0 0 48 48">
+                <path d="M6 40V8l38 16Zm3-4.65L36.2 24 9 12.5v8.4L21.1 24 9 27Zm0 0V12.5 27Z" />
+              </svg>
+            </ngx-md-filter-chip>
+            <ngx-md-filter-chip label="Assist Chip 3 with Material Icon">
+              <span slot="icon" viewBox="0 0 48 48" class="material-symbols-outlined">
+                filter_list
+              </span>
+            </ngx-md-filter-chip>
+          </ngx-md-chip-set>
+        </div>
 
-      <div class="row">
-        <ngx-md-icon-button class="m-3" toggle selected>
-          <ngx-md-icon slot="selected">check</ngx-md-icon>
-          <ngx-md-icon>close</ngx-md-icon>
-        </ngx-md-icon-button>
-        <ngx-md-filled-icon-button class="m-3" toggle selected>
-          <ngx-md-icon slot="selected">check</ngx-md-icon>
-          <ngx-md-icon>close</ngx-md-icon>
-        </ngx-md-filled-icon-button>
-        <ngx-md-filled-tonal-icon-button class="m-3" toggle selected>
-          <ngx-md-icon slot="selected">check</ngx-md-icon>
-          <ngx-md-icon>close</ngx-md-icon>
-        </ngx-md-filled-tonal-icon-button>
-        <ngx-md-outlined-icon-button class="m-3" toggle selected>
-          <ngx-md-icon slot="selected">check</ngx-md-icon>
-          <ngx-md-icon>close</ngx-md-icon>
-        </ngx-md-outlined-icon-button>
+        <div class="row">
+          <ngx-md-chip-set>
+            <ngx-md-input-chip label="Input Chip 0" remove-only avatar disabled always-focusable></ngx-md-input-chip>
+            <ngx-md-input-chip label="Input Chip 1"></ngx-md-input-chip>
+            <ngx-md-input-chip label="Input Chip 2">
+              <svg slot="icon" viewBox="0 0 48 48">
+                <path d="M6 40V8l38 16Zm3-4.65L36.2 24 9 12.5v8.4L21.1 24 9 27Zm0 0V12.5 27Z" />
+              </svg>
+            </ngx-md-input-chip>
+            <ngx-md-input-chip label="Assist Chip 3 with Material Icon">
+              <span slot="icon" viewBox="0 0 48 48" class="material-symbols-outlined">
+                filter_list
+              </span>
+            </ngx-md-input-chip>
+          </ngx-md-chip-set>
+        </div>
+
+        <div class="row">
+          <ngx-md-chip-set>
+            <ngx-md-suggestion-chip label="Suggestion Chip 0" elevated></ngx-md-suggestion-chip>
+            <ngx-md-suggestion-chip label="Suggestion Chip 1"></ngx-md-suggestion-chip>
+            <ngx-md-suggestion-chip label="Suggestion Chip 2">
+              <svg slot="icon" viewBox="0 0 48 48">
+                <path d="M6 40V8l38 16Zm3-4.65L36.2 24 9 12.5v8.4L21.1 24 9 27Zm0 0V12.5 27Z" />
+              </svg>
+            </ngx-md-suggestion-chip>
+            <ngx-md-suggestion-chip label="Assist Chip 3 with Material Icon">
+              <span slot="icon" viewBox="0 0 48 48" class="material-symbols-outlined">
+                filter_list
+              </span>
+            </ngx-md-suggestion-chip>
+          </ngx-md-chip-set>
+        </div>
+      </ngx-md-elevation>
+    </div>
+
+    <div class="divider-wrapper">
+      <h1 class="m-3">Divider:</h1>
+      <ngx-md-elevation elevation-level="5">
+        <div class="row">
+          <section>
+            <p>Lorem ipsum... DEFAULT</p>
+            <ngx-md-divider role="separator"></ngx-md-divider>
+            <p>Lorem ipsum... DEFAULT</p>
+          </section>
+        </div>
+
+        <div class="row">
+          <section>
+            <p>Lorem ipsum... INSET</p>
+            <ngx-md-divider [inset]="true"></ngx-md-divider>
+            <p>Lorem ipsum... INSET</p>
+          </section>
+        </div>
+
+        <div class="row">
+          <section>
+            <p>Lorem ipsum... INSET START</p>
+            <ngx-md-divider [inset-start]="true"></ngx-md-divider>
+            <p>Lorem ipsum... INSET START</p>
+          </section>
+        </div>
+
+        <div class="row">
+          <section>
+            <p>Lorem ipsum... INSET END</p>
+            <ngx-md-divider [inset-end]="true"></ngx-md-divider>
+            <p>Lorem ipsum... INSET END</p>
+          </section>
+        </div>
+      </ngx-md-elevation>
+    </div>
+
+    <div class="elevation-wrapper">
+      <h1 class="m-3">Elevation:</h1>
+      <ngx-md-elevation elevation-level="5">
+        <div class="row">
+          <ngx-md-elevation elevation-level="0" class="m-3"><span>Elevation Level 0</span></ngx-md-elevation>
+          <ngx-md-elevation elevation-level="1" class="m-3"><span>Elevation Level 1</span></ngx-md-elevation>
+          <ngx-md-elevation elevation-level="2" class="m-3"><span>Elevation Level 2</span></ngx-md-elevation>
+          <ngx-md-elevation elevation-level="3" class="m-3"><span>Elevation Level 3</span></ngx-md-elevation>
+          <ngx-md-elevation elevation-level="4" class="m-3"><span>Elevation Level 4</span></ngx-md-elevation>
+          <ngx-md-elevation elevation-level="5" class="m-3"><span>Elevation Level 5</span></ngx-md-elevation>
+        </div>
+
+        <div class="row">
+          <ngx-md-elevation elevation-level="0" class="m-3" [animated]="true"><span>Elevation Level
+              0</span></ngx-md-elevation>
+          <ngx-md-elevation elevation-level="1" class="m-3" [animated]="true"><span>Elevation Level
+              1</span></ngx-md-elevation>
+          <ngx-md-elevation elevation-level="2" class="m-3" [animated]="true"><span>Elevation Level
+              2</span></ngx-md-elevation>
+          <ngx-md-elevation elevation-level="3" class="m-3" [animated]="true"><span>Elevation Level
+              3</span></ngx-md-elevation>
+          <ngx-md-elevation elevation-level="4" class="m-3" [animated]="true"><span>Elevation Level
+              4</span></ngx-md-elevation>
+          <ngx-md-elevation elevation-level="5" class="m-3" [animated]="true"><span>Elevation Level
+              5</span></ngx-md-elevation>
+        </div>
+      </ngx-md-elevation>
+    </div>
+
+    <div class="dialog-wrapper">
+      <h1 class="m-3">Dialogs:</h1>
+      <ngx-md-elevation elevation-level="5">
+        <ngx-md-elevated-button (click)="onClickOpenDialog()">Open Dialog</ngx-md-elevated-button>
+      </ngx-md-elevation>
+    </div>
+
+    <div class="fab-wrapper">
+      <h1 class="m-3">Floating Action Button (FAB):</h1>
+      <div class="row m-5">
+        <ngx-md-elevation elevation-level="5">
+          <div class="row">
+            <ngx-md-fab variant="primary" class="m-3">
+              <ngx-md-icon slot="icon">edit</ngx-md-icon>
+            </ngx-md-fab>
+            <ngx-md-fab variant="secondary" class="m-3">
+              <ngx-md-icon slot="icon">edit</ngx-md-icon>
+            </ngx-md-fab>
+            <ngx-md-fab variant="tertiary" class="m-3">
+              <ngx-md-icon slot="icon">edit</ngx-md-icon>
+            </ngx-md-fab>
+          </div>
+          <div class="row">
+            <ngx-md-fab class="m-3" label="Edit" variant="primary">
+              <ngx-md-icon slot="icon">edit</ngx-md-icon>
+            </ngx-md-fab>
+            <ngx-md-fab class="m-3" label="Edit" variant="secondary">
+              <ngx-md-icon slot="icon">edit</ngx-md-icon>
+            </ngx-md-fab>
+            <ngx-md-fab class="m-3" label="Edit" variant="tertiary">
+              <ngx-md-icon slot="icon">edit</ngx-md-icon>
+            </ngx-md-fab>
+            <ngx-md-fab class="m-3" label="Edit">
+              <ngx-md-icon slot="icon">edit</ngx-md-icon>
+            </ngx-md-fab>
+          </div>
+          <div class="row">
+            <ngx-md-fab class="m-3" label="Edit" variant="primary"></ngx-md-fab>
+            <ngx-md-fab class="m-3" label="Edit" variant="secondary"></ngx-md-fab>
+            <ngx-md-fab class="m-3" label="Edit" variant="tertiary"></ngx-md-fab>
+            <ngx-md-fab class="m-3" label="Edit"></ngx-md-fab>
+          </div>
+          <div class="row">
+            <ngx-md-fab class="m-3" lowered label="Lowered Edit" variant="primary"></ngx-md-fab>
+            <ngx-md-fab class="m-3" lowered label="Lowered Edit" variant="secondary"></ngx-md-fab>
+            <ngx-md-fab class="m-3" lowered label="Lowered Edit" variant="tertiary"></ngx-md-fab>
+            <ngx-md-fab class="m-3" lowered label="Lowered Edit"></ngx-md-fab>
+          </div>
+          <div class="row">
+            <ngx-md-fab class="m-3" size="small">
+              <ngx-md-icon slot="icon">edit</ngx-md-icon>
+            </ngx-md-fab>
+            <ngx-md-fab class="m-3" size="small" touch-target="none">
+              <ngx-md-icon slot="icon">edit</ngx-md-icon>
+            </ngx-md-fab>
+            <ngx-md-fab class="m-3" size="medium">
+              <ngx-md-icon slot="icon">edit</ngx-md-icon>
+            </ngx-md-fab>
+            <ngx-md-fab class="m-3">
+              <ngx-md-icon slot="icon">edit</ngx-md-icon>
+            </ngx-md-fab>
+            <ngx-md-fab class="m-3" size="large">
+              <ngx-md-icon slot="icon">edit</ngx-md-icon>
+            </ngx-md-fab>
+          </div>
+        </ngx-md-elevation>
       </div>
-    </ngx-md-elevation>
+      <h1 class="m-3">Branded FAB:</h1>
+      <div class="row m-5">
+        <ngx-md-elevation elevation-level="5">
+          <div class="row">
+            <ngx-md-branded-fab class="m-3" size="small" aria-label="Add">
+              <svg slot="icon" viewBox="0 0 36 36">
+                <path fill="#34A853" d="M16 16v14h4V20z"></path>
+                <path fill="#4285F4" d="M30 16H20l-4 4h14z"></path>
+                <path fill="#FBBC05" d="M6 16v4h10l4-4z"></path>
+                <path fill="#EA4335" d="M20 16V6h-4v14z"></path>
+                <path fill="none" d="M0 0h36v36H0z"></path>
+              </svg>
+            </ngx-md-branded-fab>
+
+            <ngx-md-branded-fab class="m-3" label="Add">
+              <svg slot="icon" viewBox="0 0 36 36">
+                <path fill="#34A853" d="M16 16v14h4V20z"></path>
+                <path fill="#4285F4" d="M30 16H20l-4 4h14z"></path>
+                <path fill="#FBBC05" d="M6 16v4h10l4-4z"></path>
+                <path fill="#EA4335" d="M20 16V6h-4v14z"></path>
+                <path fill="none" d="M0 0h36v36H0z"></path>
+              </svg>
+            </ngx-md-branded-fab>
+
+            <ngx-md-branded-fab class="m-3" aria-label="Add">
+              <svg slot="icon" viewBox="0 0 36 36">
+                <path fill="#34A853" d="M16 16v14h4V20z"></path>
+                <path fill="#4285F4" d="M30 16H20l-4 4h14z"></path>
+                <path fill="#FBBC05" d="M6 16v4h10l4-4z"></path>
+                <path fill="#EA4335" d="M20 16V6h-4v14z"></path>
+                <path fill="none" d="M0 0h36v36H0z"></path>
+              </svg>
+            </ngx-md-branded-fab>
+            <ngx-md-branded-fab class="m-3" size="large" aria-label="Add">
+              <svg slot="icon" viewBox="0 0 36 36">
+                <path fill="#34A853" d="M16 16v14h4V20z"></path>
+                <path fill="#4285F4" d="M30 16H20l-4 4h14z"></path>
+                <path fill="#FBBC05" d="M6 16v4h10l4-4z"></path>
+                <path fill="#EA4335" d="M20 16V6h-4v14z"></path>
+                <path fill="none" d="M0 0h36v36H0z"></path>
+              </svg>
+            </ngx-md-branded-fab>
+
+            <ngx-md-branded-fab class="m-3" aria-label="Add" lowered>
+              <svg slot="icon" viewBox="0 0 36 36">
+                <path fill="#34A853" d="M16 16v14h4V20z"></path>
+                <path fill="#4285F4" d="M30 16H20l-4 4h14z"></path>
+                <path fill="#FBBC05" d="M6 16v4h10l4-4z"></path>
+                <path fill="#EA4335" d="M20 16V6h-4v14z"></path>
+                <path fill="none" d="M0 0h36v36H0z"></path>
+              </svg>
+            </ngx-md-branded-fab>
+            <ngx-md-branded-fab class="m-3" size="large" aria-label="Add" lowered>
+              <svg slot="icon" viewBox="0 0 36 36">
+                <path fill="#34A853" d="M16 16v14h4V20z"></path>
+                <path fill="#4285F4" d="M30 16H20l-4 4h14z"></path>
+                <path fill="#FBBC05" d="M6 16v4h10l4-4z"></path>
+                <path fill="#EA4335" d="M20 16V6h-4v14z"></path>
+                <path fill="none" d="M0 0h36v36H0z"></path>
+              </svg>
+            </ngx-md-branded-fab>
+          </div>
+        </ngx-md-elevation>
+      </div>
+    </div>
+
+    <div class="icon-buttons-wrapper">
+      <h1 class="m-3">Icon Buttons:</h1>
+      <ngx-md-elevation elevation-level="5">
+        <div class="row">
+          <ngx-md-icon-button class="m-3">
+            <ngx-md-icon>check</ngx-md-icon>
+          </ngx-md-icon-button>
+          <ngx-md-filled-icon-button class="m-3">
+            <ngx-md-icon>check</ngx-md-icon>
+          </ngx-md-filled-icon-button>
+          <ngx-md-filled-tonal-icon-button class="m-3">
+            <ngx-md-icon>check</ngx-md-icon>
+          </ngx-md-filled-tonal-icon-button>
+          <ngx-md-outlined-icon-button class="m-3">
+            <ngx-md-icon>check</ngx-md-icon>
+          </ngx-md-outlined-icon-button>
+        </div>
+
+        <div class="row">
+          <ngx-md-icon-button class="m-3" toggle>
+            <ngx-md-icon slot="selected">check</ngx-md-icon>
+            <ngx-md-icon>close</ngx-md-icon>
+          </ngx-md-icon-button>
+          <ngx-md-filled-icon-button class="m-3" toggle>
+            <ngx-md-icon slot="selected">check</ngx-md-icon>
+            <ngx-md-icon>close</ngx-md-icon>
+          </ngx-md-filled-icon-button>
+          <ngx-md-filled-tonal-icon-button class="m-3" toggle>
+            <ngx-md-icon slot="selected">check</ngx-md-icon>
+            <ngx-md-icon>close</ngx-md-icon>
+          </ngx-md-filled-tonal-icon-button>
+          <ngx-md-outlined-icon-button class="m-3" toggle>
+            <ngx-md-icon slot="selected">check</ngx-md-icon>
+            <ngx-md-icon>close</ngx-md-icon>
+          </ngx-md-outlined-icon-button>
+        </div>
+
+        <div class="row">
+          <ngx-md-icon-button class="m-3" toggle selected>
+            <ngx-md-icon slot="selected">check</ngx-md-icon>
+            <ngx-md-icon>close</ngx-md-icon>
+          </ngx-md-icon-button>
+          <ngx-md-filled-icon-button class="m-3" toggle selected>
+            <ngx-md-icon slot="selected">check</ngx-md-icon>
+            <ngx-md-icon>close</ngx-md-icon>
+          </ngx-md-filled-icon-button>
+          <ngx-md-filled-tonal-icon-button class="m-3" toggle selected>
+            <ngx-md-icon slot="selected">check</ngx-md-icon>
+            <ngx-md-icon>close</ngx-md-icon>
+          </ngx-md-filled-tonal-icon-button>
+          <ngx-md-outlined-icon-button class="m-3" toggle selected>
+            <ngx-md-icon slot="selected">check</ngx-md-icon>
+            <ngx-md-icon>close</ngx-md-icon>
+          </ngx-md-outlined-icon-button>
+        </div>
+      </ngx-md-elevation>
+    </div>
+
+    <div class="list-wrapper">
+      <h1 class="m-3">Lists:</h1>
+      <ngx-md-elevation elevation-level="5">
+        <div class="row">
+
+          <div class="col">
+            <ngx-md-elevation elevation-level="5">
+              <ngx-md-list style="max-width: 300px;">
+                <ngx-md-list-item>Fruits</ngx-md-list-item>
+                <ngx-md-divider></ngx-md-divider>
+                <ngx-md-list-item>Apple</ngx-md-list-item>
+                <ngx-md-list-item>
+                  Banana
+                  <div slot="supporting-text">sample supporting text</div>
+                  <div slot="trailing-supporting-text">90+</div>
+                </ngx-md-list-item>
+                <ngx-md-list-item>
+                  <div slot="headline">Cucumber</div>
+                  <div slot="supporting-text">Cucumbers are long green fruits that are just as long as this multi-line
+                    description</div>
+                </ngx-md-list-item>
+                <ngx-md-list-item interactive href="https://google.com/search?q=buy+kiwis&tbm=shop" target="_blank">
+                  <div slot="headline">Shop for Kiwis</div>
+                  <div slot="supporting-text">This will link you out in a new tab</div>
+                  <ngx-md-icon slot="end">open_in_new</ngx-md-icon>
+                </ngx-md-list-item>
+              </ngx-md-list>
+            </ngx-md-elevation>
+          </div>
+          <div class="col">
+            <ngx-md-elevation elevation-level="5">
+              <ngx-md-list style="max-width: 300px;">
+                <ngx-md-list-item>
+                  Lit
+                  <svg slot="start" style="height: 24px" viewBox="0 0 160 200">
+                    <path fill="currentColor"
+                      d="m160 80v80l-40-40zm-40 40v80l40-40zm0-80v80l-40-40zm-40 40v80l40-40zm-40-40v80l40-40zm40-40v80l-40-40zm-40 120v80l-40-40zm-40-40v80l40-40z" />
+                  </svg>
+                </ngx-md-list-item>
+                <ngx-md-divider></ngx-md-divider>
+                <ngx-md-list-item>
+                  Polymer
+                  <ngx-md-icon slot="start">polymer</ngx-md-icon>
+                </ngx-md-list-item>
+                <ngx-md-divider></ngx-md-divider>
+                <ngx-md-list-item>
+                  Angular
+                  <svg slot="start" style="height: 24px" viewBox="0 0 250 250">
+                    <polygon points="108,135.4 125,135.4 125,135.4 125,135.4 142,135.4 125,94.5   " />
+                    <path
+                      d="M125,30L125,30L125,30L31.9,63.2l14.2,123.1L125,230l0,0l0,0l78.9-43.7l14.2-123.1L125,30z M183.1,182.6h-21.7h0
+                        l-11.7-29.2H125h0h0h-24.7l-11.7,29.2h0H36.9h0L125,52.1l0,0l0,0l0,0l0,0L183.1,182.6L183.1,182.6z" />
+                  </svg>
+                </ngx-md-list-item>
+              </ngx-md-list>
+            </ngx-md-elevation>
+          </div>
+          <div class="col">
+            <ngx-md-elevation elevation-level="5">
+              <ngx-md-list style="max-width: 300px;">
+                <ngx-md-list-item type="button">
+                  Lit
+                  <svg slot="start" style="height: 24px" viewBox="0 0 160 200">
+                    <path fill="currentColor"
+                      d="m160 80v80l-40-40zm-40 40v80l40-40zm0-80v80l-40-40zm-40 40v80l40-40zm-40-40v80l40-40zm40-40v80l-40-40zm-40 120v80l-40-40zm-40-40v80l40-40z" />
+                  </svg>
+                </ngx-md-list-item>
+                <ngx-md-divider></ngx-md-divider>
+                <ngx-md-list-item type="button">
+                  Polymer
+                  <ngx-md-icon slot="start">polymer</ngx-md-icon>
+                </ngx-md-list-item>
+                <ngx-md-divider></ngx-md-divider>
+                <ngx-md-list-item type="button">
+                  Angular
+                  <svg slot="start" style="height: 24px" viewBox="0 0 250 250">
+                    <polygon points="108,135.4 125,135.4 125,135.4 125,135.4 142,135.4 125,94.5   " />
+                    <path
+                      d="M125,30L125,30L125,30L31.9,63.2l14.2,123.1L125,230l0,0l0,0l78.9-43.7l14.2-123.1L125,30z M183.1,182.6h-21.7h0
+                        l-11.7-29.2H125h0h0h-24.7l-11.7,29.2h0H36.9h0L125,52.1l0,0l0,0l0,0l0,0L183.1,182.6L183.1,182.6z" />
+                  </svg>
+                </ngx-md-list-item>
+              </ngx-md-list>
+            </ngx-md-elevation>
+          </div>
+          <div class="col list3">
+            <ngx-md-elevation elevation-level="5">
+              <ngx-md-list>
+                <ngx-md-list-item>
+                  <div slot="headline">Eggs</div>
+                  <ngx-md-icon slot="start">egg</ngx-md-icon>
+                  <ngx-md-icon slot="end">recommend</ngx-md-icon>
+                </ngx-md-list-item>
+                <ngx-md-list-item class="unhealthy">
+                  <div slot="headline">Ice Cream</div>
+                  <ngx-md-icon slot="start">icecream</ngx-md-icon>
+                  <ngx-md-icon slot="end">dangerous</ngx-md-icon>
+                </ngx-md-list-item>
+                <ngx-md-list-item>
+                  <div slot="headline">Orange</div>
+                  <ngx-md-icon slot="start">nutrition</ngx-md-icon>
+                  <ngx-md-icon slot="end">recommend</ngx-md-icon>
+                </ngx-md-list-item>
+              </ngx-md-list>
+            </ngx-md-elevation>
+          </div>
+
+          <div class="col list4">
+            <ngx-md-elevation elevation-level="5">
+              <ngx-md-list>
+                <ngx-md-list-item headline="Wide Cat">
+                  <img slot="start" src="https://placekitten.com/200/100">
+                </ngx-md-list-item>
+                <ngx-md-list-item headline="Round kitty cat">
+                  <img slot="start" src="https://placekitten.com/202/101">
+                </ngx-md-list-item>
+                <ngx-md-list-item headline="Softe cate">
+                  <img slot="start" src="https://placekitten.com/212/106">
+                </ngx-md-list-item>
+              </ngx-md-list>
+            </ngx-md-elevation>
+          </div>
+        </div>
+
+      </ngx-md-elevation>
+    </div>
+
+    <div class="menus-wrapper">
+      <h1 class="m-3">Menu(s): PENDING</h1>
+      <ngx-md-elevation elevation-level="5">
+        <div class="row">
+          <!-- <ngx-md-filled-button class="m-3">Set with Ele Ref</ngx-md-filled-button> -->
+          <ngx-md-filled-button class="m-3" (click)="onClickSetWithIdRef($event)">Set with Id Ref</ngx-md-filled-button>
+
+          <span style="position: relative;">
+            <ngx-md-menu #usageMenuById (opened)="onUsageMenuByIdOpened()" (closed)="onUsageMenuByIdClosed()">
+              <ngx-md-menu-item>
+                <div slot="headline">Apple</div>
+              </ngx-md-menu-item>
+              <ngx-md-menu-item>
+                <div slot="headline">Banana</div>
+              </ngx-md-menu-item>
+              <ngx-md-menu-item>
+                <div slot="headline">Cucumber</div>
+              </ngx-md-menu-item>
+            </ngx-md-menu>
+          </span>
+
+        </div>
+      </ngx-md-elevation>
+    </div>
+
+    <div class="progress-indicators-wrapper">
+      <h1 class="m-3">Progress Indicators:</h1>
+      <ngx-md-elevation elevation-level="5">
+        <div class="row">
+          <ngx-md-linear-progress value="0.5"></ngx-md-linear-progress>
+          <ngx-md-circular-progress value="0.75"></ngx-md-circular-progress>
+        </div>
+        <div class="row">
+          <ngx-md-linear-progress indeterminate></ngx-md-linear-progress>
+          <ngx-md-circular-progress indeterminate></ngx-md-circular-progress>
+        </div>
+        <div class="row">
+          <ngx-md-linear-progress four-color indeterminate></ngx-md-linear-progress>
+          <ngx-md-circular-progress four-color indeterminate></ngx-md-circular-progress>
+        </div>
+        <div class="row">
+          <ngx-md-linear-progress value="0.5" aria-label="Download progress"></ngx-md-linear-progress>
+          <ngx-md-circular-progress value="0.5" aria-label="Page refresh progress"></ngx-md-circular-progress>
+        </div>
+        <div class="row">
+          <ngx-md-linear-progress value="0.5" buffer="0.8"></ngx-md-linear-progress>
+        </div>
+      </ngx-md-elevation>
+    </div>
+
+    <div class="radio-wrapper">
+      <h1 class="m-3">Radio Buttons:</h1>
+      <ngx-md-elevation elevation-level="5">
+        <div class="row" aria-labelledby="group-title" role="radiogroup">
+          <ngx-md-radio aria-label="cat-radio-button" id="cat-radio" name="animals" value="Cat">Cat</ngx-md-radio>
+          <ngx-md-radio aria-label="dog-radio-button" id="dog-radio" name="animals" value="Dog">Dog</ngx-md-radio>
+          <ngx-md-radio aria-label="birds-radio-button" id="birds-radio" name="animals" value="Birds" checked
+            disabled>Birds</ngx-md-radio>
+        </div>
+      </ngx-md-elevation>
+    </div>
+
+    <div class="ripple-wrapper">
+      <h1 class="m-3">Ripples:</h1>
+      <ngx-md-elevation elevation-level="5">
+        <div class="row">
+          <button class="m-3">Button Without Ripple</button>
+          <button class="m-3 rpl-container">
+            Button With Ripple
+            <ngx-md-ripple></ngx-md-ripple>
+          </button>
+        </div>
+      </ngx-md-elevation>
+    </div>
+
+    <div class="select-wrapper">
+      <h1 class="m-3">Select:</h1>
+      <ngx-md-elevation elevation-level="5">
+        <div class="row">
+          <ngx-md-outlined-select class="m-5">
+            <ngx-md-select-option aria-label="blank"></ngx-md-select-option>
+            <ngx-md-select-option selected value="apple">
+              <div slot="headline">Apple</div>
+            </ngx-md-select-option>
+            <ngx-md-select-option value="apricot">
+              <div slot="headline">Apricot</div>
+            </ngx-md-select-option>
+          </ngx-md-outlined-select>
+
+          <!-- <ngx-md-filled-select class="m-5">
+            <ngx-md-select-option aria-label="blank"></ngx-md-select-option>
+            <ngx-md-select-option value="apple">
+              <div slot="headline">Apple</div>
+            </ngx-md-select-option>
+            <ngx-md-select-option value="apricot">
+              <div slot="headline">Apricot</div>
+            </ngx-md-select-option>
+          </ngx-md-filled-select> -->
+        </div>
+
+        <div class="row">
+          <ngx-md-outlined-select class="m-5" required>
+            <ngx-md-select-option value="one">
+              <div slot="headline">One</div>
+            </ngx-md-select-option>
+            <ngx-md-select-option value="two">
+              <div slot="headline">Two</div>
+            </ngx-md-select-option>
+          </ngx-md-outlined-select>
+
+          <!-- <ngx-md-filled-select class="m-5" required>
+            <ngx-md-select-option value="one">
+              <div slot="headline">One</div>
+            </ngx-md-select-option>
+            <ngx-md-select-option value="two">
+              <div slot="headline">Two</div>
+            </ngx-md-select-option>
+          </ngx-md-filled-select> -->
+        </div>
+      </ngx-md-elevation>
+    </div>
+
+    <div class="slider-wrapper">
+      <h1 class="m-3">Slider:</h1>
+      <ngx-md-elevation elevation-level="5">
+        <div class="row">
+          <h3 class="row m-3">Normal and Steps:</h3>
+          <ngx-md-slider></ngx-md-slider>
+          <ngx-md-slider ticks value="50"></ngx-md-slider>
+        </div>
+
+        <div class="row">
+          <h3 class="row m-3">Continuous:</h3>
+          <ngx-md-slider min="0" max="100" value="50"></ngx-md-slider>
+        </div>
+
+        <div class="row">
+          <h3 class="row m-3">Discrete:</h3>
+          <ngx-md-slider step="5" ticks min="0" max="20"></ngx-md-slider>
+        </div>
+
+        <div class="row">
+          <h3 class="row m-3">Range:</h3>
+          <ngx-md-slider range value-start="25" value-end="50"></ngx-md-slider>
+        </div>
+
+        <div class="row">
+          <h3 class="row m-3">Labeled:</h3>
+          <ngx-md-slider labeled></ngx-md-slider>
+        </div>
+      </ngx-md-elevation>
+    </div>
+
+    <div class="switch-wrapper">
+      <h1 class="m-3">Switch:</h1>
+      <ngx-md-elevation elevation-level="5">
+        <div class="row">
+          <ngx-md-switch #mySwitch class="m-3" (input)="onSwitchInput(mySwitch)"
+            (change)="onSwitchChange(mySwitch)"></ngx-md-switch>
+          <ngx-md-switch class="m-3" selected></ngx-md-switch>
+        </div>
+
+        <div class="row">
+          <h4>Icons:</h4>
+        </div>
+
+        <div class="row">
+          <ngx-md-switch class="m-3" icons></ngx-md-switch>
+          <ngx-md-switch class="m-3" icons selected></ngx-md-switch>
+        </div>
+
+        <div class="row">
+          <h3>Show Only Selected Icon:</h3>
+        </div>
+
+        <div class="row">
+          <ngx-md-switch class="m-3" icons show-only-selected-icon></ngx-md-switch>
+          <ngx-md-switch class="m-3" icons show-only-selected-icon selected></ngx-md-switch>
+        </div>
+
+        <div class="row">
+          <p>With Label Pending</p>
+        </div>
+      </ngx-md-elevation>
+    </div>
+
+    <div class="tabs-wrapper">
+      <h1 class="m-3">Tabs:</h1>
+      <ngx-md-elevation elevation-level="5">
+        <div class="row">
+          <div class="col">
+            <h2>Primary Tabs</h2>
+            <div class="row">
+              <ngx-md-tabs>
+                <ngx-md-primary-tab>Video</ngx-md-primary-tab>
+                <ngx-md-primary-tab>Photos</ngx-md-primary-tab>
+                <ngx-md-primary-tab>Audio</ngx-md-primary-tab>
+              </ngx-md-tabs>
+            </div>
+            <h3>Selection:</h3>
+            <div class="row">
+              <ngx-md-tabs>
+                <ngx-md-primary-tab>Video</ngx-md-primary-tab>
+                <ngx-md-primary-tab active>Photos</ngx-md-primary-tab>
+                <ngx-md-primary-tab>Audio</ngx-md-primary-tab>
+              </ngx-md-tabs>
+            </div>
+            <h3>Icons:</h3>
+            <div class="row">
+              <ngx-md-tabs>
+                <ngx-md-primary-tab>
+                  <ngx-md-icon slot="icon">piano</ngx-md-icon>
+                  Keyboard
+                </ngx-md-primary-tab>
+                <ngx-md-primary-tab>
+                  <ngx-md-icon slot="icon">tune</ngx-md-icon>
+                  Guitar
+                </ngx-md-primary-tab>
+              </ngx-md-tabs>
+            </div>
+            <div class="row">
+              <ngx-md-tabs>
+                <ngx-md-primary-tab>
+                  <ngx-md-icon slot="icon">piano</ngx-md-icon>
+                </ngx-md-primary-tab>
+                <ngx-md-primary-tab>
+                  <ngx-md-icon slot="icon">tune</ngx-md-icon>
+                </ngx-md-primary-tab>
+              </ngx-md-tabs>
+            </div>
+            <h3>Inline Icons:</h3>
+            <div class="row">
+              <ngx-md-tabs>
+                <ngx-md-primary-tab inline-icon>
+                  <ngx-md-icon slot="icon">piano</ngx-md-icon>
+                  Keyboard
+                </ngx-md-primary-tab>
+                <ngx-md-primary-tab inline-icon>
+                  <ngx-md-icon slot="icon">tune</ngx-md-icon>
+                  Guitar
+                </ngx-md-primary-tab>
+              </ngx-md-tabs>
+            </div>
+          </div>
+
+          <div class="col">
+            <h2>Secondary Tabs</h2>
+            <div class="row">
+              <ngx-md-tabs>
+                <ngx-md-secondary-tab>Birds</ngx-md-secondary-tab>
+                <ngx-md-secondary-tab>Cats</ngx-md-secondary-tab>
+                <ngx-md-secondary-tab>Dogs</ngx-md-secondary-tab>
+              </ngx-md-tabs>
+            </div>
+            <h3>Selection:</h3>
+            <div class="row">
+              <ngx-md-tabs>
+                <ngx-md-secondary-tab>Video</ngx-md-secondary-tab>
+                <ngx-md-secondary-tab active>Photos</ngx-md-secondary-tab>
+                <ngx-md-secondary-tab>Audio</ngx-md-secondary-tab>
+              </ngx-md-tabs>
+            </div>
+            <h3>Icons:</h3>
+            <div class="row">
+              <ngx-md-tabs>
+                <ngx-md-secondary-tab>
+                  <ngx-md-icon slot="icon">flight</ngx-md-icon>
+                  Travel
+                </ngx-md-secondary-tab>
+                <ngx-md-secondary-tab>
+                  <ngx-md-icon slot="icon">hotel</ngx-md-icon>
+                  Hotel
+                </ngx-md-secondary-tab>
+                <ngx-md-secondary-tab>
+                  <ngx-md-icon slot="icon">hiking</ngx-md-icon>
+                  Activities
+                </ngx-md-secondary-tab>
+              </ngx-md-tabs>
+            </div>
+            <div class="row">
+              <ngx-md-tabs>
+                <ngx-md-secondary-tab>
+                  <ngx-md-icon slot="icon">piano</ngx-md-icon>
+                </ngx-md-secondary-tab>
+                <ngx-md-secondary-tab>
+                  <ngx-md-icon slot="icon">tune</ngx-md-icon>
+                </ngx-md-secondary-tab>
+              </ngx-md-tabs>
+            </div>
+          </div>
+
+          <!-- <div class="col">
+            <div class="row">
+              <ngx-md-tabs aria-label="Content to view" (change)="onTabChanges($event)">
+                <ngx-md-primary-tab id="photos-tab" aria-controls="photos-panel" selected>
+                  Photos
+                </ngx-md-primary-tab>
+                <ngx-md-primary-tab id="videos-tab" aria-controls="videos-panel">
+                  Videos
+                </ngx-md-primary-tab>
+                <ngx-md-primary-tab id="music-tab" aria-controls="music-panel">
+                  Music
+                </ngx-md-primary-tab>
+              </ngx-md-tabs>
+            </div>
+          </div> -->
+        </div>
+      </ngx-md-elevation>
+    </div>
+
+    <div class="text-fileds-wrapper">
+      <h1 class="m-3">Text Fields:</h1>
+      <ngx-md-elevation elevation-level="5">
+        <div class="row">
+          <ngx-md-filled-text-field label="Label" value="Value" class="m-3"></ngx-md-filled-text-field>
+          <ngx-md-outlined-text-field label="Label" value="Value" class="m-3"></ngx-md-outlined-text-field>
+        </div>
+
+        <div class="row">
+          <ngx-md-filled-text-field label="Username" type="email" class="m-3"></ngx-md-filled-text-field>
+          <ngx-md-filled-text-field label="Password" type="password" class="m-3"></ngx-md-filled-text-field>
+        </div>
+
+        <div class="row" style="display: inline-flex; align-items: center;">
+          <ngx-md-outlined-text-field class="m-3" label="Favorite food"></ngx-md-outlined-text-field>
+          <ngx-md-outlined-text-field class="m-3" placeholder="email@domain.com"></ngx-md-outlined-text-field>
+          <div class="m-3">First name</div>
+          <ngx-md-outlined-text-field class="m-3" aria-label="First name"></ngx-md-outlined-text-field>
+        </div>
+
+        <div class="row" id="textarea-example">
+          <ngx-md-filled-text-field type="textarea" label="Vertical resize" rows="3" value="Not Working Vertical Resize"></ngx-md-filled-text-field>
+        </div>
+
+        <div class="row">
+          <ngx-md-outlined-text-field class="m-3" placeholder="Search for messages">
+            <ngx-md-icon slot="leading-icon">search</ngx-md-icon>
+          </ngx-md-outlined-text-field>
+
+          <ngx-md-outlined-text-field class="m-3" label="Password" type="password">
+            <ngx-md-icon-button toggle slot="trailing-icon">
+              <ngx-md-icon>visibility</ngx-md-icon>
+              <ngx-md-icon slot="selected">visibility_off</ngx-md-icon>
+            </ngx-md-icon-button>
+          </ngx-md-outlined-text-field>
+
+          <ngx-md-outlined-text-field class="m-3" label="Username" error error-text="Username not available">
+            <ngx-md-icon slot="trailing-icon">error</ngx-md-icon>
+          </ngx-md-outlined-text-field>
+        </div>
+
+        <div class="row">
+          <ngx-md-outlined-text-field label="Dollar amount" type="number" value="0" prefix-text="$" suffix-text=".00"></ngx-md-outlined-text-field>
+        </div>
+
+        <div class="row">
+          <ngx-md-filled-text-field
+              label="Comments"
+              supporting-text="Provide comments for the issue"
+              class="m-3">
+          </ngx-md-filled-text-field>
+
+          <ngx-md-filled-text-field
+              label="Name"
+              required
+              supporting-text="*required"
+              error-text="Please fill out this field"
+              class="m-3">
+          </ngx-md-filled-text-field>
+        </div>
+        <div class="row">
+          <ngx-md-outlined-text-field class="m-3" label="Title" value="Short" [max-length]="10"></ngx-md-outlined-text-field>
+          <ngx-md-outlined-text-field class="m-3" label="Title" value="min len not working" [min-length]="3" [max-length]="20"></ngx-md-outlined-text-field>
+        </div>
+        <div class="row">
+          <ngx-md-filled-text-field class="m-3" label="Title" value="Short" [max-length]="10"></ngx-md-filled-text-field>
+          <ngx-md-filled-text-field class="m-3" label="Title" value="min len not working" min-length="5" max-length="10"></ngx-md-filled-text-field>
+        </div>
+
+        <div class="row">
+          <form>
+            <ngx-md-filled-text-field class="m-3" name="name" label="Name" required></ngx-md-filled-text-field>
+            <ngx-md-filled-text-field class="m-3" name="email" label="Email" pattern="[\w\d-]+" suffix-text="@gmail.com"></ngx-md-filled-text-field>
+            <ngx-md-outlined-text-field label="Username" value="jdoe" error error-text="Username is not available"></ngx-md-outlined-text-field>
+          </form>
+        </div>
+      </ngx-md-elevation>
+    </div>
   </div>
 </div>
 
+
+
 <!-- Dialogs -->
-<ngx-md-dialog
-#sampleDialog
-[open]="isDialogOpened"
-type="alert"
-  (open)="onOpen()"
-  (opened)="onOpend()"
-  (close)="onClose()"
-  (closed)="onClosed()"
-  (cancel)="onCancel()"
-  (keydown.code.esc)="onClickDialogAction('Esc')"
+<ngx-md-dialog #sampleDialog [open]="isDialogOpened" type="alert" (open)="onOpen()" (opened)="onOpend()"
+  (close)="onClose()" (closed)="onClosed()" (cancel)="onCancel()" (keydown.code.esc)="onClickDialogAction('Esc')"
   (keydown.code.enter)="onClickDialogAction('Enter')">
   <div headline>This is sample Headline for alert.</div>
   <div content>This is sample Content for alert.</div>
@@ -441,3 +967,20 @@ type="alert"
     <ngx-md-text-button (click)="onClickDialogAction('Ok')">Ok</ngx-md-text-button>
   </div>
 </ngx-md-dialog>
+
+<!-- Tabs -->
+<!-- <div id="photos-panel" role="tabpanel" aria-labelledby="photos-tab">
+  ...
+  Photos
+  ...
+</div>
+<div id="videos-panel" role="tabpanel" aria-labelledby="videos-tab" hidden>
+  ...
+  Videos
+  ...
+</div>
+<div id="music-panel" role="tabpanel" aria-labelledby="music-tab" hidden>
+  ...
+  Musices
+  ...
+</div> -->

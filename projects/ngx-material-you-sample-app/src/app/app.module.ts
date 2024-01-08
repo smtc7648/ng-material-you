@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 // import { WebControlsModule } from 'ngx-material-web';//use for build change
 import { WebControlsModule } from './../../../ngx-material-web/src/public-api'; //use for immediate change
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -13,6 +14,7 @@ import { WebControlsModule } from './../../../ngx-material-web/src/public-api'; 
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule,
     WebControlsModule
   ],
   providers: [],
