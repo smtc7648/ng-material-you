@@ -1,1 +1,30 @@
-<p>outlined-text-field works!</p>
+<md-outlined-text-field
+  #ngxOutlinedTextField
+  [attr.disabled]="disabled"
+  [attr.error]="error"
+  [attr.error-text]="errorText"
+  [attr.label]="label"
+  [attr.required]="required"
+  [attr.value]="value"
+  [attr.prefix-text]="prefixText"
+  [attr.suffix-text]="suffixText"
+  [attr.has-leading-icon]="hasLeadingIcon"
+  [attr.has-trailing-icon]="hasTrailingIcon"
+  [attr.supporting-text]="supportingText"
+  [attr.text-direction]="textDirection"
+  [attr.rows]="rows"
+  [attr.cols]="cols"
+  [attr.inputmode]="inputMode"
+  [attr.max]="max"
+  [attr.maxlength]="maxLength"
+  [attr.min]="min"
+  [attr.minlength]="minLength"
+  [attr.pattern]="pattern"
+  [attr.placeholder]="placeholder"
+  [attr.readonly]="readonly"
+  [attr.multiple]="multiple"
+  [attr.step]="step"
+  [attr.type]="type"
+  [attr.autocomplete]="autocomplete">
+  <ng-content></ng-content>
+</md-outlined-text-field>
