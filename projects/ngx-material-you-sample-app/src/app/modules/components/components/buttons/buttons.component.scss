@@ -1,0 +1,48 @@
+:host {
+  --catalog-display-xl-font-size: 88px;
+
+  display: flex;
+  flex-grow: 1;
+  background-color: var(--md-sys-color-surface-container);
+
+  .buttons-wrapper {
+    display: flex;
+    flex-grow: 1;
+    .pane-1,
+    .pane-2 {
+      overflow-y: auto;
+      display: flex;
+      background-color: var(--md-sys-color-surface);
+      margin-block-end: 15px;
+      margin-inline-end: 20px;
+      border-radius: 30px;
+      padding-block: 30px;
+    }
+    .pane-1 {
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+      padding-left: 30px;
+
+      .tile-row {
+        display: flex;
+        .tile {
+          border-radius: 30px;
+          padding: 60px;
+          margin-inline: 10px;
+          background-color: var(--md-sys-color-surface-variant);
+          color: var(--md-sys-color-on-surface-variant);
+
+
+          .tile-headline {
+            font-size: var(--catalog-display-xl-font-size);
+          }
+        }
+      }
+    }
+    .pane-2 {
+      padding-inline: 10px;
+    }
+  }
+}
+

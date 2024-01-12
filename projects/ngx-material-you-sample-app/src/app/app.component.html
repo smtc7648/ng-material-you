@@ -1,6 +1,33 @@
-<router-outlet></router-outlet>
+<div class="header">
+  <ngx-md-icon-button class="m-5" (click)="toggleSpacer(sideMenu)">
+    <ngx-md-icon>menu</ngx-md-icon>
+  </ngx-md-icon-button>
+  <h2>Ngx Material You</h2>
+</div>
+<div class="body">
+  <div #sideMenu class="spacer">
+    <ngx-md-list>
+      <ng-container *ngFor="let item of sideMenuItems">
+        <!-- style="border-radius: 30px;margin-block: 5px; padding-inline-start: 10px;" -->
+        <ngx-md-list-item
+          [interactive]="item.interactive"
+          [href]="item.href"
+          [target]="item.target">
+          <h3 *ngIf="item.isHeadline">{{item.title}}</h3>
+          <span *ngIf="!item.isHeadline">{{item.title}}</span>
+        </ngx-md-list-item>
+        <ngx-md-divider *ngIf="item.appendDivider" [inset]="true"></ngx-md-divider>
+      </ng-container>
+    </ngx-md-list>
+  </div>
+  <div class="panes">
+    <router-outlet></router-outlet>
+  </div>
+</div>
 
-<div class="viewport">
+
+<!-- OLD HIDDEN BLOCK OF CODE -->
+<!-- <div class="viewport" *ngIf="false">
   <div class="sidebar hide" #sideBar>
   </div>
   <div class="sidebar-toggle-button">
@@ -567,7 +594,7 @@
       <h1 class="m-3">Menu(s): PENDING</h1>
       <ngx-md-elevation elevation-level="5">
         <div class="row">
-          <!-- <ngx-md-filled-button class="m-3">Set with Ele Ref</ngx-md-filled-button> -->
+          <ngx-md-filled-button class="m-3">Set with Ele Ref</ngx-md-filled-button>
           <ngx-md-filled-button class="m-3" (click)="onClickSetWithIdRef($event)">Set with Id Ref</ngx-md-filled-button>
 
           <span style="position: relative;">
@@ -652,7 +679,7 @@
             </ngx-md-select-option>
           </ngx-md-outlined-select>
 
-          <!-- <ngx-md-filled-select class="m-5">
+          <ngx-md-filled-select class="m-5">
             <ngx-md-select-option aria-label="blank"></ngx-md-select-option>
             <ngx-md-select-option value="apple">
               <div slot="headline">Apple</div>
@@ -660,7 +687,7 @@
             <ngx-md-select-option value="apricot">
               <div slot="headline">Apricot</div>
             </ngx-md-select-option>
-          </ngx-md-filled-select> -->
+          </ngx-md-filled-select>
         </div>
 
         <div class="row">
@@ -673,14 +700,14 @@
             </ngx-md-select-option>
           </ngx-md-outlined-select>
 
-          <!-- <ngx-md-filled-select class="m-5" required>
+          <ngx-md-filled-select class="m-5" required>
             <ngx-md-select-option value="one">
               <div slot="headline">One</div>
             </ngx-md-select-option>
             <ngx-md-select-option value="two">
               <div slot="headline">Two</div>
             </ngx-md-select-option>
-          </ngx-md-filled-select> -->
+          </ngx-md-filled-select>
         </div>
       </ngx-md-elevation>
     </div>
@@ -854,7 +881,7 @@
             </div>
           </div>
 
-          <!-- <div class="col">
+          <div class="col">
             <div class="row">
               <ngx-md-tabs aria-label="Content to view" (change)="onTabChanges($event)">
                 <ngx-md-primary-tab id="photos-tab" aria-controls="photos-panel" selected>
@@ -868,7 +895,7 @@
                 </ngx-md-primary-tab>
               </ngx-md-tabs>
             </div>
-          </div> -->
+          </div>
         </div>
       </ngx-md-elevation>
     </div>
@@ -952,12 +979,9 @@
       </ngx-md-elevation>
     </div>
   </div>
-</div>
+</div> -->
 
-
-
-<!-- Dialogs -->
-<ngx-md-dialog #sampleDialog [open]="isDialogOpened" type="alert" (open)="onOpen()" (opened)="onOpend()"
+<!-- <ngx-md-dialog #sampleDialog [open]="isDialogOpened" type="alert" (open)="onOpen()" (opened)="onOpend()"
   (close)="onClose()" (closed)="onClosed()" (cancel)="onCancel()" (keydown.code.esc)="onClickDialogAction('Esc')"
   (keydown.code.enter)="onClickDialogAction('Enter')">
   <div headline>This is sample Headline for alert.</div>
@@ -966,7 +990,7 @@
     <ngx-md-text-button (click)="onClickDialogAction('Close')">Close</ngx-md-text-button>
     <ngx-md-text-button (click)="onClickDialogAction('Ok')">Ok</ngx-md-text-button>
   </div>
-</ngx-md-dialog>
+</ngx-md-dialog> -->
 
 <!-- Tabs -->
 <!-- <div id="photos-panel" role="tabpanel" aria-labelledby="photos-tab">

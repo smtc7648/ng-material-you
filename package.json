@@ -8,7 +8,8 @@
     "build-lib": "ng build --project=ngx-material-web",
     "publish": "cd dist/ngx-material-web && npm publish",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "add-component": "ng g c -m --skip-tests --project=ngx-material-you-sample-app"
   },
   "dependencies": {
     "@angular/animations": "^16.2.0",
