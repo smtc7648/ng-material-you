@@ -1,6 +1,8 @@
 import { Component, ElementRef, ViewChild } from '@angular/core';
 import { DialogComponent } from 'projects/ngx-material-web/src/lib/core/web-controls/dialog/dialog.component';
 import { MenuComponent } from 'projects/ngx-material-web/src/public-api';
+import { SideMenuItem } from './shared/interfaces/side-menu-item';
+import { sideMenuItems } from './shared/models/side-menu-items';
 
 @Component({
   selector: 'app-root',
@@ -8,79 +10,93 @@ import { MenuComponent } from 'projects/ngx-material-web/src/public-api';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  @ViewChild('usageMenuById') usageMenuById!: MenuComponent;
-  @ViewChild('sampleDialog') dialog!: DialogComponent;
-  @ViewChild('sideBar') sidebar!: ElementRef<HTMLDivElement>;
-  title = 'ngx-material-you-sample-app';
-  isDialogOpened = false;
 
-  onOpen(): void {
-    console.log("onOpen");
+  sideMenuItems!: Array<SideMenuItem>;
+
+  constructor() {
+    this.sideMenuItems = sideMenuItems;
+    console.log(`loaded ${Date.now()}`)
   }
 
-  onOpend(): void {
-    console.log('onOpened');
-    this.isDialogOpened = true;
+  toggleSpacer(sideMenu: HTMLDivElement): void {
+    sideMenu.classList.toggle("spacer-hide");
   }
 
-  onClose(): void {
-    console.log("onClose");
-  }
+  // OLD CODE STARTS
+  // @ViewChild('usageMenuById') usageMenuById!: MenuComponent;
+  // @ViewChild('sampleDialog') dialog!: DialogComponent;
+  // @ViewChild('sideBar') sidebar!: ElementRef<HTMLDivElement>;
+  // title = 'ngx-material-you-sample-app';
+  // isDialogOpened = false;
 
-  onClosed(): void {
-    console.log('onClosed');
-    this.isDialogOpened = false;
-  }
+  // onOpen(): void {
+  //   console.log("onOpen");
+  // }
 
-  onCancel(): void {
-    console.log('onCancel');
-  }
+  // onOpend(): void {
+  //   console.log('onOpened');
+  //   this.isDialogOpened = true;
+  // }
 
-  onClickOpenDialog(): void {
-    this.dialog.show();
-    console.log(this.dialog.getOpenAnimation);
-  }
+  // onClose(): void {
+  //   console.log("onClose");
+  // }
 
-  onClickDialogAction(action: string): void {
-    action = action.toLowerCase();
-    switch(action) {
-      case 'ok':
-      case 'close':
-      case 'esc':
-      case 'enter':
-        this.dialog.closeDialog(action);
-        break;
-      default: //DO Nothing
-    }
-  }
+  // onClosed(): void {
+  //   console.log('onClosed');
+  //   this.isDialogOpened = false;
+  // }
 
-  onClickSetWithIdRef(e: Event): void {
-    this.usageMenuById.show();
-  }
+  // onCancel(): void {
+  //   console.log('onCancel');
+  // }
 
-  onUsageMenuByIdOpened(): void {
-    console.log("menu opened");
-  }
+  // onClickOpenDialog(): void {
+  //   this.dialog.show();
+  //   console.log(this.dialog.getOpenAnimation);
+  // }
 
-  onUsageMenuByIdClosed(): void {
-    console.log("menu closed");
-  }
+  // onClickDialogAction(action: string): void {
+  //   action = action.toLowerCase();
+  //   switch(action) {
+  //     case 'ok':
+  //     case 'close':
+  //     case 'esc':
+  //     case 'enter':
+  //       this.dialog.closeDialog(action);
+  //       break;
+  //     default: //DO Nothing
+  //   }
+  // }
 
-  onSwitchInput(e: any): void {
-    console.log("Switch Input Triggered");
-    console.log(e);
-  }
+  // onClickSetWithIdRef(e: Event): void {
+  //   this.usageMenuById.show();
+  // }
 
-  onSwitchChange(e: any): void {
-    console.log("Switch Change Triggered");
-    console.log(e);
-  }
+  // onUsageMenuByIdOpened(): void {
+  //   console.log("menu opened");
+  // }
 
-  onClickToggleMenu(e: Event) {
-    this.sidebar.nativeElement.classList.toggle('hide');
-  }
+  // onUsageMenuByIdClosed(): void {
+  //   console.log("menu closed");
+  // }
 
-  onTabChanges(e: any) {
-    console.log("ON TAB CHANGE")
-  }
+  // onSwitchInput(e: any): void {
+  //   console.log("Switch Input Triggered");
+  //   console.log(e);
+  // }
+
+  // onSwitchChange(e: any): void {
+  //   console.log("Switch Change Triggered");
+  //   console.log(e);
+  // }
+
+  // onClickToggleMenu(e: Event) {
+  //   this.sidebar.nativeElement.classList.toggle('hide');
+  // }
+
+  // onTabChanges(e: any) {
+  //   console.log("ON TAB CHANGE")
+  // }
+  // OLD CODE ENDS
 }

@@ -54,6 +54,6 @@ We have used Material Web 1.0 to create the inital angular wrappers for the Matr
 17. Sliders
 18. Switch
 19. ~~Tabs~~
-20. ~~Text Fields~~
+20. Text Fields [Incomplete]
 
 >**Note:** Components which are partially implemented are stricked out or mentioned with incomplete.
